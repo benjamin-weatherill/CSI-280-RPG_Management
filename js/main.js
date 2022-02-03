@@ -1,3 +1,3 @@
-testFunc() {
-	doccument.getElementById('test').innerHTML = Date();
+function testFunc() {
+	doccument.getElementById('test').innerHTML = Date()
 }
