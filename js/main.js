@@ -1,3 +1,3 @@
 function testFunc() {
-	doccument.getElementById('test').innerHTML = Date()
+	document.getElementById('test').innerHTML = Date()
 }
