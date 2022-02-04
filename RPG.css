@@ -23,7 +23,7 @@ background-size: cover;
     text-align:center;
     padding: 35px;
 }
-#myButton{
+#myButtonDiv{
 	visibility: hidden;
 }
 
@@ -36,4 +36,9 @@ background-size: cover;
 #drop_menu_2{
     width: 75px;
     text-align:center;
+}
+
+#success{
+    visibility: hidden;
+    background-color: black;
 }
