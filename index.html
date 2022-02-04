@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>RPG Management System</title>
 		<link rel="stylesheet" href="RPG.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 		<script src="js/jquery-3.6.0.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/fileInput.js"></script>
 	</head>
 	<body>
 		<h1 id="Home_Page_Title">RPG Management System</h1>
@@ -23,6 +25,9 @@
 		<button type="button" id="button1" onclick="success()">Enter</button>
 		<br/><br/>
 		<button id="myButton" type="button" onclick="switchHidden()">Show Date Button</button>
+		<input type="file" id="input">
+		<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
+		</input>
 		
 		<div id="myButtonDiv">
 			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>

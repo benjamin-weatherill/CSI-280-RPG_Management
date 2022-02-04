@@ -4,11 +4,11 @@ background-size: cover;
 }
 
 #test{
-    height: 150px;
+    height: 50px;
     width: 450px;
     color: white;
     background-color: rgba(0,0,0, 0.5);
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 #button1{
@@ -41,4 +41,12 @@ background-size: cover;
 #success{
     visibility: hidden;
     background-color: black;
+}
+
+#input{
+    /*height: 30px;
+    width: 200px;*/
+    margin-left: 10px;
+    color: black;
+    background-color: rgba(231, 230, 230, 0.73);
 }
