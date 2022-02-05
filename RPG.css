@@ -1,0 +1,52 @@
+body{
+background-image: url("https://cdn.gamedevmarket.net/wp-content/uploads/20191203193538/8b741662764b0e71bf113859b6fe2ee84ee6d14f.jpg");
+background-size: cover;
+}
+
+#test{
+    height: 50px;
+    width: 450px;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    opacity: 0.9;
+}
+
+#button1{
+    margin-top: 0px;
+}
+
+#Home_Page_Title{
+    color: purple;
+	font-size: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0,0,0, 0.5);
+    text-align:center;
+    padding: 35px;
+}
+#myButtonDiv{
+	visibility: hidden;
+}
+
+#drop_menu{
+    color: white;
+    padding: 10px;
+    background-color:rgba(0,0,0, 0.5);
+}
+
+#drop_menu_2{
+    width: 75px;
+    text-align:center;
+}
+
+#success{
+    visibility: hidden;
+    background-color: black;
+}
+
+#input{
+    /*height: 30px;
+    width: 200px;*/
+    margin-left: 10px;
+    color: black;
+    background-color: rgba(231, 230, 230, 0.73);
+}
