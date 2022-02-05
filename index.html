@@ -35,9 +35,11 @@
 			 src="https://thumbs.dreamstime.com/z/success-word-written-wood-block-text-wooden-table-your-desing-top-view-concept-203132070.jpg"
 			 width="270" height="150">
 		<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>
-		<input type="file" id="input">
-		<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
-		</input>
+		<br/><br/>
+		<form id="inputForm">
+			<input id="input" type="file"/>
+			<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
+		</form>
 		
 		<div id="myButtonDiv">
 			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
@@ -45,7 +47,7 @@
 		</div>
 
 
-		<div id = "fill_image" style = background:transparent;></div>
+		<div id="fill_image" style = background:transparent;></div>
 
 
 	</body>
