@@ -3,13 +3,9 @@ function testFunc() {
 }
 
 function success() {
-	/*
-	let x = document.getElementById('success');
-	
-	x.style.visibility = "visible";
-	*/
 
-	y = document.getElementById('drop_menu_2').value;
+
+	let y = document.getElementById('drop_menu_2').value;
 
 	if (y == "knight"){
 		console.log("Knight Test");
@@ -27,11 +23,15 @@ function success() {
 		console.log("Thief Test")
 		document.getElementById("fill_image").innerHTML = '<img src = "https://i.pinimg.com/originals/b0/4a/eb/b04aeb642b4be08235c12451ebc0cd94.png" style = "background:transparent;" height = "350px" width = "225px">'
 	}
-	/*
-	setTimeout(function(){
+
+	let x = document.getElementById('success');
+
+	x.style.visibility = "visible";
+
+	setTimeout(function() {
 		x.style.visibility = "hidden";
 	},5000);
-	*/
+
 }
 
 function switchHidden() {
