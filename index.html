@@ -13,8 +13,15 @@
 	</head>
 	<body>
 		<h1 id="Home_Page_Title">RPG Management System</h1>
-		
+<!--
+		<div id="success_image">
+			<img id="success"
+				 src="https://thumbs.dreamstime.com/z/success-word-written-wood-block-text-wooden-table-your-desing-top-view-concept-203132070.jpg"
+				 width="60%" height="200">
+		</div>
+-->
 		<label for="drop_menu" id="drop_menu">Choose a Character Class</label>
+
 		<select for="drop_menu_2" id="drop_menu_2">
 			<option value="knight">Knight</option>
 			<option value="mage">Mage</option>
@@ -24,19 +31,24 @@
 		
 		<button type="button" id="button1" onclick="success()">Enter</button>
 		<br/><br/>
-		<button id="myButton" type="button" onclick="switchHidden()">Show Date Button</button>
-		<input type="file" id="input">
-		<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
-		</input>
+		<img id="success"
+			 src="https://thumbs.dreamstime.com/z/success-word-written-wood-block-text-wooden-table-your-desing-top-view-concept-203132070.jpg"
+			 width="270" height="150">
+		<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>
+		<br/><br/>
+		<form id="inputForm">
+			<input id="input" type="file"/>
+			<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
+		</form>
 		
 		<div id="myButtonDiv">
 			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
 			<p id="test"></p>
 		</div>
 
-		<img id="success"
-			 src="https://thumbs.dreamstime.com/z/success-word-written-wood-block-text-wooden-table-your-desing-top-view-concept-203132070.jpg"
-			 width="100%" height="500">
+
+		<div id="fill_image" style = background:transparent;></div>
+
 
 	</body>
 </html>

@@ -1,31 +1,17 @@
 body{
-background-image: url("https://cdn.gamedevmarket.net/wp-content/uploads/20191203193538/8b741662764b0e71bf113859b6fe2ee84ee6d14f.jpg");
-background-size: cover;
-}
-
-#test{
-    height: 50px;
-    width: 450px;
-    color: white;
-    background-color: rgba(0,0,0, 0.5);
-    opacity: 0.9;
+    background-image: url("https://cdn.gamedevmarket.net/wp-content/uploads/20191203193538/8b741662764b0e71bf113859b6fe2ee84ee6d14f.jpg");
+    background-size: cover;
 }
 
 #button1{
     margin-top: 0px;
 }
 
-#Home_Page_Title{
-    color: purple;
-	font-size: 35px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: rgba(0,0,0, 0.5);
-    text-align:center;
-    padding: 35px;
-}
-#myButtonDiv{
-	visibility: hidden;
-}
+/*
+#success_image {
+    float: right;
+
+}*/
 
 #drop_menu{
     color: white;
@@ -38,10 +24,18 @@ background-size: cover;
     text-align:center;
 }
 
+#button1{}
+
 #success{
+    float: right;
     visibility: hidden;
     background-color: black;
+    margin-right: 100px;
 }
+
+#myButton{}
+
+#inputForm{}
 
 #input{
     /*height: 30px;
@@ -50,3 +44,19 @@ background-size: cover;
     color: black;
     background-color: rgba(231, 230, 230, 0.73);
 }
+
+#inputUpload{}
+
+#myButtonDiv{
+    visibility: hidden;
+}
+
+#test{
+    height: 50px;
+    width: 450px;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    opacity: 0.9;
+}
+
+#fill_image{}
