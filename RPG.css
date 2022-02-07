@@ -60,3 +60,10 @@ body{
 }
 
 #fill_image{}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: lightslategrey;
+    color: white;
+}
