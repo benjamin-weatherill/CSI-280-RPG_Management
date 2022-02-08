@@ -13,7 +13,7 @@ function success() {
 	}
 	else if (y == "mage"){
 		console.log("Mage Test")
-		document.getElementById("fill_image").innerHTML = '<img src = "https://www.kryxrpg.com/static/38051780264e12fd8d1c1a523c2dd94b/1a174/mage.png" style = "background:transparent;" height = "450px" width = "250px">'
+		document.getElementById("fill_image").innerHTML = '<img src = "https://www.kryxrpg.com/static/38051780264e12fd8d1c1a523c2dd94b/1a174/mage.png" style = "background:transparent;" height = "350px" width = "250px">'
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Test")
