@@ -1,28 +1,11 @@
+
+// Test Function for Date
 function testFunc() {
 	document.getElementById('test').innerHTML = Date();
 }
 
+// Universal Success Function
 function success() {
-
-
-	let y = document.getElementById('drop_menu_2').value;
-
-	if (y == "knight"){
-		console.log("Knight Test");
-		document.getElementById("fill_image").innerHTML = '<img src = "https://static.tvtropes.org/pmwiki/pub/images/fepr_blackknight.png" style = "background:transparent;" height = "325px" width = "300px">'
-	}
-	else if (y == "mage"){
-		console.log("Mage Test")
-		document.getElementById("fill_image").innerHTML = '<img src = "https://www.kryxrpg.com/static/38051780264e12fd8d1c1a523c2dd94b/1a174/mage.png" style = "background:transparent;" height = "350px" width = "250px">'
-	}
-	else if (y == "cleric"){
-		console.log("Cleric Test")
-		document.getElementById("fill_image").innerHTML = '<img src = "https://www.finalfantasyd20.com/wp-content/uploads/cleric.png" style = "background:transparent;" height = "350px" width = "300px">'
-	}
-	else if (y == "thief"){
-		console.log("Thief Test")
-		document.getElementById("fill_image").innerHTML = '<img src = "https://i.pinimg.com/originals/b0/4a/eb/b04aeb642b4be08235c12451ebc0cd94.png" style = "background:transparent;" height = "350px" width = "225px">'
-	}
 
 	let x = document.getElementById('success');
 
@@ -33,6 +16,43 @@ function success() {
 	},5000);
 
 }
+
+
+// Character Menu Selection
+function characterMenu(){
+
+	let y = document.getElementById('drop_menu_2').value;
+
+	if (y == "knight"){
+		console.log("Knight Test");
+		document.getElementById("fill_image").innerHTML = '<img src = "https://static.tvtropes.org/pmwiki/pub/images/fepr_blackknight.png" style = "background:transparent;" height = "350px" width = "325px">'
+		
+	}
+	else if (y == "mage"){
+		console.log("Mage Test")
+		document.getElementById("fill_image").innerHTML = '<img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Ffireemblem%2Fimages%2F3%2F38%2FMerric_Fight.png%2Frevision%2Flatest%3Fcb%3D20171029115158%26path-prefix%3Dfr&f=1&nofb=1" style = "background:transparent;" height = "375px" width = "325px">'
+	}
+	else if (y == "cleric"){
+		console.log("Cleric Test")
+		document.getElementById("fill_image").innerHTML = '<img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamepedia.cursecdn.com%2Ffeheroes_gamepedia_en%2Fthumb%2F7%2F72%2FCleric_BtlFace.png%2F1200px-Cleric_BtlFace.png&f=1&nofb=1" style = "background:transparent;" height = "450px" width = "375px">'
+	}
+	else if (y == "thief"){
+		console.log("Thief Test")
+		document.getElementById("fill_image").innerHTML = '<img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamepress.gg%2Ffeheroes%2Fsites%2Ffireemblem%2Ffiles%2F2017-07%2FFull_Portrait_Thief.png&f=1&nofb=1" style = "background:transparent;" height = "400px" width = "325px">'
+	}
+	else if (y == "archer"){
+		console.log("Archer Test")
+		document.getElementById("fill_image").innerHTML = '<img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F48%2F4f%2Fa4%2F484fa47a9128d420c45b760b732b89c8.png&f=1&nofb=1" style = "background:transparent;" height = "400px" width = "325px">'
+	}
+	else if (y == "darkmage"){
+		console.log("Dark Mage Test")
+		document.getElementById("fill_image").innerHTML = '<img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2b%2F14%2Fc8%2F2b14c82ee8f6f8cdbdc29f43be81b2eb.png&f=1&nofb=1" style = "background:transparent;" height = "400px" width = "325px">'
+	}
+	
+
+
+}
+
 
 function switchHidden() {
 	let x = document.getElementById('myButtonDiv');
