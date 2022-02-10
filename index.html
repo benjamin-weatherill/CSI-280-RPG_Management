@@ -30,7 +30,7 @@
 			<option value="darkmage">Dark Mage</option>
 		</select>
 		
-		<button type="button" id="button1" onclick="success(); characterMenu();">Enter</button>
+		<button type="button" id="button1" onclick="success(); characterMenu(); createTable();">Enter</button>
 		<br/><br/>
 		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
 
@@ -47,6 +47,33 @@
 			<p id="test"></p>
 		</div>
 
+		<table id = "attribute_table">
+			<tr>
+				<th id = "attribute">Attributes</th>
+				<th id = "stats">Statistics</th>
+			</tr>
+			<tr>
+				<th id = "hp">HP</th>
+				<th id = "hp_stat"></th>
+			</tr>
+			<tr>
+				<th id = "attack">Attack</th>
+				<th id = "attack_stat"></th>
+			</tr>
+			<tr>
+				<th id = "defense">Defense</th>
+				<th id = "defense_stat"></th>
+			</tr>
+			<tr>
+				<th id = "strength">Strength</th>
+				<th id = "strength_stat"></th>
+			</tr>
+			<tr>
+				<th id = "magic">Magic</th>
+				<th id = "magic_stat"></th>
+			</tr>
+
+		</table>
 
 		<div id="fill_image" style = background:transparent;></div>
 

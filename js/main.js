@@ -48,11 +48,38 @@ function characterMenu(){
 		console.log("Dark Mage Test")
 		document.getElementById("fill_image").innerHTML = '<img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2b%2F14%2Fc8%2F2b14c82ee8f6f8cdbdc29f43be81b2eb.png&f=1&nofb=1" style = "background:transparent;" height = "400px" width = "325px">'
 	}
-	
-
 
 }
 
+function createTable(){
+
+	let y = document.getElementById('drop_menu_2').value;
+
+	if (y == "knight"){
+		console.log("Knight Table Test");
+		document.getElementById("hp_stat").innerHTML = '10'
+		document.getElementById("attack_stat").innerHTML = "10"
+		document.getElementById("defense_stat").innerHTML = "10"
+		document.getElementById("strength_stat").innerHTML = "10"
+		document.getElementById("magic_stat").innerHTML = "10"
+	}
+	else if (y == "mage"){
+		console.log("Mage Table Test")
+	}
+	else if (y == "cleric"){
+		console.log("Cleric Table Test")
+	}
+	else if (y == "thief"){
+		console.log("Thief Table Test")
+	}
+	else if (y == "archer"){
+		console.log("Archer Table Test")
+	}
+	else if (y == "darkmage"){
+		console.log("Dark Mage Table Test")
+	}
+
+}
 
 function switchHidden() {
 	let x = document.getElementById('myButtonDiv');

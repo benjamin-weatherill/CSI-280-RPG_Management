@@ -1,6 +1,7 @@
 body{
     background-image: url("https://cdn.gamedevmarket.net/wp-content/uploads/20191203193538/8b741662764b0e71bf113859b6fe2ee84ee6d14f.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     margin-bottom: 0;
 }
@@ -55,6 +56,24 @@ body{
     background-color: rgba(0,0,0, 0.5);
     opacity: 0.9;
 }
+
+#attribute_table{
+    width: 10%;
+    height: 300px;
+    margin-left: 450px;
+    left: 0;
+}
+
+table, th, td{
+    border: 5px solid black;
+    color: white;
+}
+
+#fill_image{
+    position: fixed;
+    margin-top: -300px;
+}
+
 
 footer {
     text-align: center;
