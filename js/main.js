@@ -57,26 +57,51 @@ function createTable(){
 
 	if (y == "knight"){
 		console.log("Knight Table Test");
-		document.getElementById("hp_stat").innerHTML = '10'
-		document.getElementById("attack_stat").innerHTML = "10"
-		document.getElementById("defense_stat").innerHTML = "10"
-		document.getElementById("strength_stat").innerHTML = "10"
-		document.getElementById("magic_stat").innerHTML = "10"
+		document.getElementById("hp_stat").innerHTML = '0'
+		document.getElementById("attack_stat").innerHTML = "0"
+		document.getElementById("defense_stat").innerHTML = "0"
+		document.getElementById("strength_stat").innerHTML = "0"
+		document.getElementById("magic_stat").innerHTML = "0"
 	}
 	else if (y == "mage"){
 		console.log("Mage Table Test")
+		document.getElementById("hp_stat").innerHTML = '1'
+		document.getElementById("attack_stat").innerHTML = "1"
+		document.getElementById("defense_stat").innerHTML = "1"
+		document.getElementById("strength_stat").innerHTML = "1"
+		document.getElementById("magic_stat").innerHTML = "1"
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Table Test")
+		document.getElementById("hp_stat").innerHTML = '2'
+		document.getElementById("attack_stat").innerHTML = "2"
+		document.getElementById("defense_stat").innerHTML = "2"
+		document.getElementById("strength_stat").innerHTML = "2"
+		document.getElementById("magic_stat").innerHTML = "2"
 	}
 	else if (y == "thief"){
 		console.log("Thief Table Test")
+		document.getElementById("hp_stat").innerHTML = '3'
+		document.getElementById("attack_stat").innerHTML = "3"
+		document.getElementById("defense_stat").innerHTML = "3"
+		document.getElementById("strength_stat").innerHTML = "3"
+		document.getElementById("magic_stat").innerHTML = "3"
 	}
 	else if (y == "archer"){
 		console.log("Archer Table Test")
+		document.getElementById("hp_stat").innerHTML = '4'
+		document.getElementById("attack_stat").innerHTML = "4"
+		document.getElementById("defense_stat").innerHTML = "4"
+		document.getElementById("strength_stat").innerHTML = "4"
+		document.getElementById("magic_stat").innerHTML = "4"
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Table Test")
+		document.getElementById("hp_stat").innerHTML = '5'
+		document.getElementById("attack_stat").innerHTML = "5"
+		document.getElementById("defense_stat").innerHTML = "5"
+		document.getElementById("strength_stat").innerHTML = "5"
+		document.getElementById("magic_stat").innerHTML = "5"
 	}
 
 }
