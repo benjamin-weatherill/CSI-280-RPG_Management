@@ -62,6 +62,8 @@ function createTable(){
 		document.getElementById("defense_stat").innerHTML = "0"
 		document.getElementById("strength_stat").innerHTML = "0"
 		document.getElementById("magic_stat").innerHTML = "0"
+
+		document.getElementById("attribute_table").style.backgroundColor = 'crimson';
 	}
 	else if (y == "mage"){
 		console.log("Mage Table Test")
@@ -70,6 +72,8 @@ function createTable(){
 		document.getElementById("defense_stat").innerHTML = "1"
 		document.getElementById("strength_stat").innerHTML = "1"
 		document.getElementById("magic_stat").innerHTML = "1"
+
+		document.getElementById("attribute_table").style.backgroundColor = 'deepskyblue';
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Table Test")
@@ -78,6 +82,8 @@ function createTable(){
 		document.getElementById("defense_stat").innerHTML = "2"
 		document.getElementById("strength_stat").innerHTML = "2"
 		document.getElementById("magic_stat").innerHTML = "2"
+
+		document.getElementById("attribute_table").style.backgroundColor = 'mediumseagreen';
 	}
 	else if (y == "thief"){
 		console.log("Thief Table Test")
@@ -86,6 +92,8 @@ function createTable(){
 		document.getElementById("defense_stat").innerHTML = "3"
 		document.getElementById("strength_stat").innerHTML = "3"
 		document.getElementById("magic_stat").innerHTML = "3"
+
+		document.getElementById("attribute_table").style.backgroundColor = 'blueviolet';
 	}
 	else if (y == "archer"){
 		console.log("Archer Table Test")
@@ -94,6 +102,8 @@ function createTable(){
 		document.getElementById("defense_stat").innerHTML = "4"
 		document.getElementById("strength_stat").innerHTML = "4"
 		document.getElementById("magic_stat").innerHTML = "4"
+
+		document.getElementById("attribute_table").style.backgroundColor = 'midnightblue';
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Table Test")
@@ -102,6 +112,8 @@ function createTable(){
 		document.getElementById("defense_stat").innerHTML = "5"
 		document.getElementById("strength_stat").innerHTML = "5"
 		document.getElementById("magic_stat").innerHTML = "5"
+
+		document.getElementById("attribute_table").style.backgroundColor = 'darkorange';
 	}
 
 }
