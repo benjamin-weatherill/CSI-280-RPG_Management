@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 		<title>RPG Management System</title>
 		<link rel="stylesheet" href="RPG.css">
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -46,6 +46,37 @@
 			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
 			<p id="test"></p>
 		</div>
+		
+
+		<!-- Character Container -->
+
+	<div id = "character_container">
+
+		<div id = "character_name">Aragorn</div>
+
+		<!-- Links to Tabs -->
+
+		<div class = "tab">
+			<button class = "tab_link" onclick = "openCharacter(event, 'weapons')">Weapons</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'skills')">Skills</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'items')">Items</button>
+		</div>
+
+		<!--Content of Tabs -->
+
+		<div id = "weapons" class = "tab_content">
+		
+		</div>
+
+		<div id = "skills" class = "tab_content">
+			
+		</div>
+
+		<div id = "items" class = "tab_content">
+		
+		</div>
+		 
+		<!-- Attribute Table -->
 
 		<table id = "attribute_table">
 			<tr>
@@ -72,11 +103,11 @@
 				<th id = "magic">Magic</th>
 				<th id = "magic_stat"></th>
 			</tr>
+			</table>
 
-		</table>
+		</div>
 
 		<div id="fill_image" style = background:transparent;></div>
-
 
 	</body>
 
