@@ -11,36 +11,32 @@
 		<script src="js/main.js"></script>
 		<script src="js/fileInput.js"></script>
 	</head>
-	<body>
-		<h1 style="color:white" id="Home_Page_Title">RPG Management System</h1>
-<!--
-		<div id="success_image">
-			<img id="success"
-				 src="https://thumbs.dreamstime.com/z/success-word-written-wood-block-text-wooden-table-your-desing-top-view-concept-203132070.jpg"
-				 width="60%" height="200">
-		</div>
--->
-		<label for="drop_menu" id="drop_menu">Choose a Character Class</label>
 
-		<select for="drop_menu_2" id="drop_menu_2">
+<!--Start of Body-->
+
+	<body style="overflow-x: hidden">
+		<h1 id="Home_Page_Title">RPG Management System</h1>
+
+		<!--Character Drop Down Menu-->
+
+		<label id="drop_menu">Choose a Character Class</label>
+
+		<select id="drop_menu_2">
 			<option value="knight">Knight</option>
 			<option value="mage">Mage</option>
 			<option value="cleric">Cleric</option>
 			<option value="thief">Thief</option>
+			<option value="archer">Archer</option>
+			<option value="darkmage">Dark Mage</option>
 		</select>
 		
-		<button type="button" id="button1" onclick="success()">Enter</button>
+		<button type="button" id="button1" onclick="success(); characterMenu(); createTable();">Enter</button>
 		<br/><br/>
-		<!--
-		<img id="success"
-			 src="https://thumbs.dreamstime.com/z/success-word-written-wood-block-text-wooden-table-your-desing-top-view-concept-203132070.jpg"
-			 width="270" height="150">
-		-->
-		<img id="success"
-			 src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg"
-			 width="270" height="150">
+		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
+
 		<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>
 		<br/><br/>
+
 		<form id="inputForm">
 			<input id="input" type="file"/>
 			<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
@@ -51,13 +47,60 @@
 			<p id="test"></p>
 		</div>
 
+		<table id = "attribute_table">
+			<tr>
+				<th id = "attribute">Attributes</th>
+				<th id = "stats">Statistics</th>
+			</tr>
+			<tr>
+				<th id = "hp">HP</th>
+				<th id = "hp_stat"></th>
+			</tr>
+			<tr>
+				<th id = "attack">Attack</th>
+				<th id = "attack_stat"></th>
+			</tr>
+			<tr>
+				<th id = "defense">Defense</th>
+				<th id = "defense_stat"></th>
+			</tr>
+			<tr>
+				<th id = "strength">Strength</th>
+				<th id = "strength_stat"></th>
+			</tr>
+			<tr>
+				<th id = "magic">Magic</th>
+				<th id = "magic_stat"></th>
+			</tr>
+
+		</table>
 
 		<div id="fill_image" style = background:transparent;></div>
 
 
 	</body>
+
+<!---End of Body. Start of Footer-->
+
 	<footer>
-		<h3>Goodbye World</h3>
-		<p>Authors: Ben Weatherill, Andrew Barnett, Andrew Vinci, and Justin Willis</p> <!-- Add your names here-->
+		<h3>Website Created By:</h3>
+		<p>Ben Weatherill, Andrew Barnett, Andrew Vinci, and Justin Willis</p> <!-- Add your names here-->
 	</footer>
+
 </html>
+
+
+
+<!--
+		<div id="success_image">
+			<img id="success"
+				 src="https://thumbs.dreamstime.com/z/success-word-written-wood-block-text-wooden-table-your-desing-top-view-concept-203132070.jpg"
+				 width="60%" height="200">
+		</div>
+-->
+
+		<!--
+		<img id="success"
+			 src="https://thumbs.dreamstime.com/z/success-word-written-wood-block-text-wooden-table-your-desing-top-view-concept-203132070.jpg"
+			 width="270" height="150">
+		-->
