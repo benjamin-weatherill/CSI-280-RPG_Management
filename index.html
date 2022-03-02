@@ -31,20 +31,26 @@
 			<option value="darkmage">Dark Mage</option>
 		</select>
 		
-		<button type="button" id="button1" onclick="success(); characterMenu(); createTable(); gatherDataTest();">Enter</button>
+		<button type="button" id="button1" onclick="success(); characterMenu(); createTable();">Enter</button>
 		<br/><br/>
 		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
 
+		<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>
 		<br/><br/>
 
 		<form id="inputForm">
 			<input id="input" type="file"/>
 			<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
 		</form>
+		
+		<div id="myButtonDiv">
+			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
+			<p id="test"></p>
+		</div>
 
 		<!-- Save Button -->
-		<button class="save" id="saveButton" type="button" onclick="download('test', 'playerSave.txt.');">Save Player</button>
-		<a href="" class="save" id="a" onclick="revertDownload();">Download</a>
+		<button id="saveButton" type="button" onclick="download('test', 'playerSave.txt.');">Save Player</button>
+		<a href="" id="a">Click here to download the Player</a>
 
 		<!-- Character Container -->
 
@@ -73,9 +79,6 @@
 		<div id = "items" class = "tab_content">
 		
 		</div>
-		 
-		<!-- Attribute Table -->
-
 		 
 		<!-- Attribute Table -->
 
@@ -109,6 +112,8 @@
 		</div>
 
 		<div id="fill_image" style = background:transparent;></div>
+
+
 
 	</body>
 
