@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" lang="english">
 	<head>
 		<meta charset="UTF-8">
 		<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -10,6 +10,7 @@
 		<script src="js/jquery-3.6.0.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/fileInput.js"></script>
+		<script src="js/backend_dev.js"></script>
 	</head>
 
 <!--Start of Body-->
@@ -46,7 +47,10 @@
 			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
 			<p id="test"></p>
 		</div>
-		
+
+		<!-- Save Button -->
+		<button id="saveButton" type="button" onclick="download('test', 'playerSave.txt.');">Save Player</button>
+		<a href="" id="a">Click here to download the Player</a>
 
 		<!-- Character Container -->
 
@@ -108,6 +112,8 @@
 		</div>
 
 		<div id="fill_image" style = background:transparent;></div>
+
+
 
 	</body>
 

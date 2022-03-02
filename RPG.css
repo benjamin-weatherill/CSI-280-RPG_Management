@@ -35,6 +35,8 @@ body{
     visibility: hidden;
     background-color: black;
     margin-right: 100px;
+    position: relative;
+    z-index: 1;
 }
 
 #input{
