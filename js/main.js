@@ -169,23 +169,3 @@ function openCharacter(event, titleName){
 	document.getElementById(titleName).style.display = "block";
 	event.currentTarget.className += "active";
 }
-
-/* This function hides and then shows the different tabs for the characeter creation page */
-
-function openCharacter(event, titleName){
-
-	var i, tabcontent, tablinks;
-
-	tabcontent = document.getElementsByClassName("tab_content");
-	for(i = 0; i < tabcontent.length; i++){
-		tabcontent[i].style.display = "none";
-	}
-
-	tablinks = document.getElementsByClassName("tab_link");
-	for(i = 0; i < tablinks.length; i++){
-		tablinks[i].className = tablinks[i].className.replace("active", "");
-	}
-
-	document.getElementById(titleName).style.display = "block";
-	event.currentTarget.className += "active";
-}
