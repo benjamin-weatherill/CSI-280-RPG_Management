@@ -259,6 +259,14 @@ footer {
     opacity: 0.5;
     color: white;
 }
+/*
+Save
+ */
+a {
+    visibility: hidden;
+}
+
+saveButton { visibility: visible; }
 
 
 /*
