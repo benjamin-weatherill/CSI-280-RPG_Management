@@ -1,8 +1,8 @@
 
-// Test Function for Date
-function testFunc() {
-	document.getElementById('test').innerHTML = Date();
-}
+
+
+
+
 
 // Universal Success Function
 function success() {
@@ -63,7 +63,12 @@ function createTable(){
 		document.getElementById("strength_stat").innerHTML = "0"
 		document.getElementById("magic_stat").innerHTML = "0"
 
+		document.getElementById("character_name").innerHTML = "Aragorn";
 		document.getElementById("attribute_table").style.backgroundColor = 'crimson';
+		document.getElementById('character_name').style.backgroundColor = 'crimson';
+		document.getElementById('weapons').style.backgroundColor = 'crimson';
+		document.getElementById('skills').style.backgroundColor = 'crimson';
+		document.getElementById('items').style.backgroundColor = 'crimson';
 	}
 	else if (y == "mage"){
 		console.log("Mage Table Test")
@@ -73,7 +78,12 @@ function createTable(){
 		document.getElementById("strength_stat").innerHTML = "1"
 		document.getElementById("magic_stat").innerHTML = "1"
 
+		document.getElementById("character_name").innerHTML = "Gandalf the Grey";
 		document.getElementById("attribute_table").style.backgroundColor = 'deepskyblue';
+		document.getElementById('character_name').style.backgroundColor = 'deepskyblue';
+		document.getElementById('weapons').style.backgroundColor = 'deepskyblue';
+		document.getElementById('skills').style.backgroundColor = 'deepskyblue';
+		document.getElementById('items').style.backgroundColor = 'deepskyblue';
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Table Test")
@@ -83,7 +93,12 @@ function createTable(){
 		document.getElementById("strength_stat").innerHTML = "2"
 		document.getElementById("magic_stat").innerHTML = "2"
 
+		document.getElementById("character_name").innerHTML = "Arwen";
 		document.getElementById("attribute_table").style.backgroundColor = 'mediumseagreen';
+		document.getElementById('character_name').style.backgroundColor = 'mediumseagreen';
+		document.getElementById('weapons').style.backgroundColor = 'mediumseagreen';
+		document.getElementById('skills').style.backgroundColor = 'mediumseagreen';
+		document.getElementById('items').style.backgroundColor = 'mediumseagreen';
 	}
 	else if (y == "thief"){
 		console.log("Thief Table Test")
@@ -93,7 +108,13 @@ function createTable(){
 		document.getElementById("strength_stat").innerHTML = "3"
 		document.getElementById("magic_stat").innerHTML = "3"
 
+		document.getElementById("character_name").innerHTML = "Pippen";
 		document.getElementById("attribute_table").style.backgroundColor = 'blueviolet';
+		document.getElementById('character_name').style.backgroundColor = 'blueviolet';
+		document.getElementById('weapons').style.backgroundColor = 'blueviolet';
+		document.getElementById('skills').style.backgroundColor = 'blueviolet';
+		document.getElementById('items').style.backgroundColor = 'blueviolet';
+		
 	}
 	else if (y == "archer"){
 		console.log("Archer Table Test")
@@ -103,7 +124,12 @@ function createTable(){
 		document.getElementById("strength_stat").innerHTML = "4"
 		document.getElementById("magic_stat").innerHTML = "4"
 
+		document.getElementById("character_name").innerHTML = "Legolas";
 		document.getElementById("attribute_table").style.backgroundColor = 'midnightblue';
+		document.getElementById('character_name').style.backgroundColor = 'midnightblue';
+		document.getElementById('weapons').style.backgroundColor = 'midnightblue';
+		document.getElementById('skills').style.backgroundColor = 'midnightblue';
+		document.getElementById('items').style.backgroundColor = 'midnightblue';
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Table Test")
@@ -113,20 +139,53 @@ function createTable(){
 		document.getElementById("strength_stat").innerHTML = "5"
 		document.getElementById("magic_stat").innerHTML = "5"
 
+		document.getElementById("character_name").innerHTML = "Saruman";
 		document.getElementById("attribute_table").style.backgroundColor = 'darkorange';
+		document.getElementById('character_name').style.backgroundColor = 'darkorange';
+		document.getElementById('weapons').style.backgroundColor = 'darkorange';
+		document.getElementById('skills').style.backgroundColor = 'darkorange';
+		document.getElementById('items').style.backgroundColor = 'darkorange';
 	}
 
 }
 
-function switchHidden() {
-	let x = document.getElementById('myButtonDiv');
-	
-	if (x.style.visibility == "visible") {
-		x.style.visibility = "hidden";
-		document.getElementById("myButton").innerHTML = "Show Date Button"
+
+/* This function hides and then shows the different tabs for the characeter creation page */
+
+function openCharacter(event, titleName){
+
+	var i, tabcontent, tablinks;
+
+	tabcontent = document.getElementsByClassName("tab_content");
+	for(i = 0; i < tabcontent.length; i++){
+		tabcontent[i].style.display = "none";
 	}
-	else {
-		x.style.visibility = "visible";
-		document.getElementById("myButton").innerHTML = "Hide Date Button"
+
+	tablinks = document.getElementsByClassName("tab_link");
+	for(i = 0; i < tablinks.length; i++){
+		tablinks[i].className = tablinks[i].className.replace("active", "");
 	}
+
+	document.getElementById(titleName).style.display = "block";
+	event.currentTarget.className += "active";
+}
+
+/* This function hides and then shows the different tabs for the characeter creation page */
+
+function openCharacter(event, titleName){
+
+	var i, tabcontent, tablinks;
+
+	tabcontent = document.getElementsByClassName("tab_content");
+	for(i = 0; i < tabcontent.length; i++){
+		tabcontent[i].style.display = "none";
+	}
+
+	tablinks = document.getElementsByClassName("tab_link");
+	for(i = 0; i < tablinks.length; i++){
+		tablinks[i].className = tablinks[i].className.replace("active", "");
+	}
+
+	document.getElementById(titleName).style.display = "block";
+	event.currentTarget.className += "active";
 }
