@@ -26,15 +26,13 @@ body{
     text-align:center;
 }
 
-#button1{
-    margin-top: 0px;
-}
-
 #success{
     float: right;
     visibility: hidden;
     background-color: black;
     margin-right: 100px;
+    position: relative;
+    z-index: 1;
 }
 
 #input{
@@ -45,10 +43,6 @@ body{
     background-color: rgba(231, 230, 230, 0.73);
 }
 
-#myButtonDiv{
-    visibility: hidden;
-}
-
 #test{
     height: 50px;
     width: 450px;
@@ -57,22 +51,190 @@ body{
     opacity: 0.9;
 }
 
-#attribute_table{
-    width: 10%;
-    height: 300px;
+
+
+/* Character Container For the Character Customization Area */
+#character_container{
+    width: 900px;
+    height: 400px;
+    border: 15px solid black;
+    padding: 50px;
+    margin: 20px;
     margin-left: 450px;
-    left: 0;
+    margin-top: -100px;
+    position: relative;
+    background-color: rgba(0,0,0, 0.5);
 }
 
-table, th, td{
+#character_name{
+    width: 925px;
+    height: 65px;
+    border: 7px solid black;
+    margin-top: -35px;
+    margin-left: -30px;
+    font-size: 55px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+
+/* These are the tabs that are used to create the weapons, skills, and items */
+.tab{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-top: 7px;
+    margin-left: 150px;
+    width: 368px;
+    border: 7px solid black;
+    font-size: 50px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 30px;
+    color: white;
+    background-color:rgba(0,0,0, 0.5);
+  }
+
+  .tab button:hover {
+    background-color:whitesmoke;
+    color: black;
+  }
+
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+
+  .tab_content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+/* This is where the different content is filled for the various tabs */
+#weapons{
+    width: 500px;;
+    height: 280px;
+    margin-left: 200px;
+    margin-top: 5px;
+    left: 0;
+    position: absolute;
+    border: 5px solid black;
+    color: white;
+}
+
+
+#skills{
+    width: 500px;;
+    height: 280px;
+    margin-left: 200px;
+    margin-top: 5px;
+    left: 0;
+    position: absolute;
+    border: 5px solid black;
+    color: white;
+}
+
+
+#items{
+    width: 500px;;
+    height: 280px;
+    margin-left: 200px;
+    margin-top: 5px;
+    left: 0;
+    position: absolute;
+    border: 5px solid black;
+    color: white;
+}
+
+
+/* These set the borders for the attribute table and their differnt cells */
+#attribute{
+    border: 5px solid black;
+    color: white;
+}
+
+
+
+
+/* These set the borders for the attribute table and their differnt cells */
+#attribute{
+    border: 5px solid black;
+    color: white;
+}
+
+
+#stats{
     border: 5px solid black;
     color: white;
 }
 
 #fill_image{
     position: fixed;
-    margin-top: -300px;
+    margin-top: -410px;
 }
+
+#hp{
+    border: 5px solid black;
+    color: white;
+}
+
+#hp_stat{
+    border: 5px solid black;
+    color: white;
+
+}
+
+
+#attack{
+    border: 5px solid black;
+    color: white;
+}
+
+
+#attack_stat{
+    border: 5px solid black;
+    color: white;
+}
+
+#defense{
+    border: 5px solid black;
+    color: white;
+}
+
+#defense_stat{
+    border: 5px solid black;
+    color: white;
+}
+
+#strength{
+    border: 5px solid black;
+    color: white;
+}
+
+#strength_stat{
+    border: 5px solid black;
+    color: white;
+}
+
+#magic{
+    border: 5px solid black;
+    color: white;
+}
+
+#magic_stat{
+    border: 5px solid black;
+    color: white;
+}
+
 
 
 footer {
@@ -88,6 +250,14 @@ footer {
     opacity: 0.5;
     color: white;
 }
+/*
+Save
+ */
+a {
+    visibility: hidden;
+}
+
+saveButton { visibility: visible; }
 
 
 /*
