@@ -1,8 +1,8 @@
 
-// Test Function for Date
-function testFunc() {
-	document.getElementById('test').innerHTML = Date();
-}
+
+
+
+
 
 // Universal Success Function
 function success() {
@@ -149,17 +149,25 @@ function createTable(){
 
 }
 
-function switchHidden() {
-	let x = document.getElementById('myButtonDiv');
-	
-	if (x.style.visibility == "visible") {
-		x.style.visibility = "hidden";
-		document.getElementById("myButton").innerHTML = "Show Date Button"
+
+/* This function hides and then shows the different tabs for the characeter creation page */
+
+function openCharacter(event, titleName){
+
+	var i, tabcontent, tablinks;
+
+	tabcontent = document.getElementsByClassName("tab_content");
+	for(i = 0; i < tabcontent.length; i++){
+		tabcontent[i].style.display = "none";
 	}
-	else {
-		x.style.visibility = "visible";
-		document.getElementById("myButton").innerHTML = "Hide Date Button"
+
+	tablinks = document.getElementsByClassName("tab_link");
+	for(i = 0; i < tablinks.length; i++){
+		tablinks[i].className = tablinks[i].className.replace("active", "");
 	}
+
+	document.getElementById(titleName).style.display = "block";
+	event.currentTarget.className += "active";
 }
 
 /* This function hides and then shows the different tabs for the characeter creation page */

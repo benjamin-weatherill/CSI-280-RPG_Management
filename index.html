@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" lang="english">
 	<head>
 		<meta charset="UTF-8">
 		<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -10,6 +10,7 @@
 		<script src="js/jquery-3.6.0.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/fileInput.js"></script>
+		<script src="js/backend_dev.js"></script>
 	</head>
 
 <!--Start of Body-->
@@ -34,18 +35,45 @@
 		<br/><br/>
 		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
 
-		<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>
 		<br/><br/>
 
 		<form id="inputForm">
 			<input id="input" type="file"/>
 			<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
 		</form>
-		
-		<div id="myButtonDiv">
-			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
-			<p id="test"></p>
+
+		<!-- Save Button -->
+		<button class="save" id="saveButton" type="button" onclick="download('test', 'playerSave.txt.');">Save Player</button>
+		<a href="" class="save" id="a" onclick="revertDownload();">Download</a>
+
+		<!-- Character Container -->
+
+	<div id = "character_container">
+
+		<div id = "character_name">Aragorn</div>
+
+		<!-- Links to Tabs -->
+
+		<div class = "tab">
+			<button class = "tab_link" onclick = "openCharacter(event, 'weapons')">Weapons</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'skills')">Skills</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'items')">Items</button>
 		</div>
+
+		<!--Content of Tabs -->
+
+		<div id = "weapons" class = "tab_content">
+		
+		</div>
+
+		<div id = "skills" class = "tab_content">
+			
+		</div>
+
+		<div id = "items" class = "tab_content">
+		
+		</div>
+
 		
 
 		<!-- Character Container -->
@@ -75,6 +103,7 @@
 		<div id = "items" class = "tab_content">
 		
 		</div>
+
 		 
 		<!-- Attribute Table -->
 
@@ -108,6 +137,7 @@
 		</div>
 
 		<div id="fill_image" style = background:transparent;></div>
+
 
 	</body>
 
