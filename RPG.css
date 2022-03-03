@@ -26,15 +26,13 @@ body{
     text-align:center;
 }
 
-#button1{
-    margin-top: 0px;
-}
-
 #success{
     float: right;
     visibility: hidden;
     background-color: black;
     margin-right: 100px;
+    position: relative;
+    z-index: 1;
 }
 
 #input{
@@ -43,10 +41,6 @@ body{
     margin-left: 10px;
     color: black;
     background-color: rgba(231, 230, 230, 0.73);
-}
-
-#myButtonDiv{
-    visibility: hidden;
 }
 
 #test{
@@ -256,6 +250,14 @@ footer {
     opacity: 0.5;
     color: white;
 }
+/*
+Save
+ */
+a {
+    visibility: hidden;
+}
+
+saveButton { visibility: visible; }
 
 
 /*
