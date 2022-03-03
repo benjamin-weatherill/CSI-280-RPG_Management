@@ -30,6 +30,7 @@ function experienceThief(expT, levelT, expGainT, expToNextLevelT){
 function experienceEnemy(levelE, expGive){
     levelE = 0; //Changes based on user input
     expGive = 0; //Changes based on level of enemy
+
 }
 
 function expCalcM (){
@@ -37,29 +38,85 @@ function expCalcM (){
         print("Level Up!")
         levelM++;
         expToNextLevelM = expToNextLevelM * 150;
+
+    let enemyDefeated = false; //Figure this out later 
+}
+
+function expCalcM (){
+    if(enemyDefeated == true && expGainM + expM >= expToNextLevelM){
+        console.log("Enemy Defeated!");
+        console.log("Level Up!");
+        levelM++;
+        expToNextLevelM = expToNextLevelM * 150;
+        expM = expM - expToNextLevelM;
+    }
+    if(enemyDefeated == true){
+        console.log("Enemy Defeated!");
+        expM = expM + expGive;
+
     }
 }
 
 function expCalcK (){
+
     if(expGainK + expK == expToNextLevelK){
         print("Level Up!")
         levelK++;
         expToNextLevelK = expToNextLevelK * 150;
+=======
+    if(enemyDefeated == true && expGainK + expK >= expToNextLevelK){
+        console.log("Enemy Defeated!");
+        console.log("Level Up!");
+        levelK++;
+        expToNextLevelK = expToNextLevelK * 150;
+        expK = expK - expToNextLevelK;
+    }
+    if(enemyDefeated == true){
+        console.log("Enemy Defeated!");
+        expK = expK + expGive;
     }
 }
 
 function expCalcC (){
+
     if(expGainC + expC == expToNextLevelC){
         print("Level Up!")
         levelC++;
         expToNextLevelC = expToNextLevelC * 150;
+
+    if(enemyDefeated == true && expGainC + expC >= expToNextLevelC){
+        console.log("Enemy Defeated!");
+        console.log("Level Up!");
+        levelC++;
+        expToNextLevelC = expToNextLevelC * 150;
+        expC = expC - expToNextLevelC;
+    }
+    if(enemyDefeated == true){
+        console.log("Enemy Defeated!");
+        expC = expC + expGive;
+
     }
 }
 
 function expCalcT (){
+
     if(expGainT + expT == expToNextLevelT){
         print("Level Up!")
         levelT++;
         expToNextLevelT = expToNextLevelT * 150;
     }
 }
+
+    if(enemyDefeated == true && expGainT + expT >= expToNextLevelT){
+        console.log("Enemy Defeated!");
+        console.log("Level Up!");
+        levelT++;
+        expToNextLevelT = expToNextLevelT * 150;
+        expT = expT - expToNextLevelT;
+    }
+    if(enemyDefeated == true){
+        console.log("Enemy Defeated!");
+        expT = expT + expGive;
+    }
+}
+

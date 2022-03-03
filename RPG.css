@@ -167,6 +167,7 @@ body{
     position: absolute;
     border: 5px solid black;
     color: white;
+
 }
 
 
@@ -175,6 +176,17 @@ body{
     border: 5px solid black;
     color: white;
 }
+
+
+}
+
+
+/* These set the borders for the attribute table and their differnt cells */
+#attribute{
+    border: 5px solid black;
+    color: white;
+}
+
 
 #stats{
     border: 5px solid black;
@@ -194,12 +206,22 @@ body{
 #hp_stat{
     border: 5px solid black;
     color: white;
+
 }
 
 #attack{
     border: 5px solid black;
     color: white;
 }
+
+
+}
+
+#attack{
+    border: 5px solid black;
+    color: white;
+}
+
 
 #attack_stat{
     border: 5px solid black;
