@@ -48,7 +48,7 @@ function expCalcM (){
 }
 
 function expCalcK (){
-    if(expGainK + expK >= expToNextLevelK){
+    if(enemyDefeated == true && expGainK + expK >= expToNextLevelK){
         console.log("Enemy Defeated!");
         console.log("Level Up!");
         levelK++;
@@ -62,7 +62,7 @@ function expCalcK (){
 }
 
 function expCalcC (){
-    if(expGainC + expC >= expToNextLevelC){
+    if(enemyDefeated == true && expGainC + expC >= expToNextLevelC){
         console.log("Enemy Defeated!");
         console.log("Level Up!");
         levelC++;
@@ -76,7 +76,7 @@ function expCalcC (){
 }
 
 function expCalcT (){
-    if(expGainT + expT >= expToNextLevelT){
+    if(enemyDefeated == true && expGainT + expT >= expToNextLevelT){
         console.log("Enemy Defeated!");
         console.log("Level Up!");
         levelT++;
