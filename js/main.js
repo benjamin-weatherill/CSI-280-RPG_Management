@@ -1,8 +1,8 @@
 
-// Test Function for Date
-function testFunc() {
-	document.getElementById('test').innerHTML = Date();
-}
+
+
+
+
 
 // Universal Success Function
 function success() {
@@ -149,18 +149,6 @@ function createTable(){
 
 }
 
-function switchHidden() {
-	let x = document.getElementById('myButtonDiv');
-	
-	if (x.style.visibility == "visible") {
-		x.style.visibility = "hidden";
-		document.getElementById("myButton").innerHTML = "Show Date Button"
-	}
-	else {
-		x.style.visibility = "visible";
-		document.getElementById("myButton").innerHTML = "Hide Date Button"
-	}
-}
 
 /* This function hides and then shows the different tabs for the characeter creation page */
 
