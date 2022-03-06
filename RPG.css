@@ -22,7 +22,7 @@ body{
 }
 
 #drop_menu_2{
-    width: 75px;
+    width: 5%;
     text-align:center;
 }
 
@@ -61,7 +61,7 @@ body{
 
 /* Character Container For the Character Customization Area */
 #character_container{
-    width: 900px;
+    width: 55%;
     height: 400px;
     border: 15px solid black;
     padding: 50px;
@@ -73,7 +73,7 @@ body{
 }
 
 #character_name{
-    width: 925px;
+    width: 105%;
     height: 65px;
     border: 7px solid black;
     margin-top: -35px;
