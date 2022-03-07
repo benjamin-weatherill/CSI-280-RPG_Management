@@ -20,18 +20,34 @@ function revertDownload() {
 }
 
 function gatherDataTest() {
-    let a = document.getElementById("hp_stat").innerText;
+    let a = "HP:" + document.getElementById("hp_stat").innerText;
     console.log("HP is: " + a);
-    let b = document.getElementById("attack_stat").innerText;
+    let b = "ATTACK:" + document.getElementById("attack_stat").innerText;
     console.log("Attack is: " + b);
-    let c = document.getElementById("defense_stat").innerText;
+    let c = "DEFENSE:" + document.getElementById("defense_stat").innerText;
     console.log("Defense is: " + c);
-    let d = document.getElementById("strength_stat").innerText;
+    let d = "STRENGTH:" + document.getElementById("strength_stat").innerText;
     console.log("Strength is: " + d);
-    let e = document.getElementById("magic_stat").innerText;
+    let e = "MAGIC:" + document.getElementById("magic_stat").innerText;
     console.log("Magic is: " + e);
+
+    //Name
+    let name = "NAME:" + document.getElementById("character_name").innerText;
+    console.log("Name: " + name);
+
+    let list = [a, b, c, d, e, name];
+
     // Format Output
-    let output = "HP:" + a + ",ATTACK:" + b + ",DEFENSE:" + c + ",STRENGTH:" + d + ",MAGIC:" + e;
+    let output = "";
+    let max = 6;
+    for (let i = 0; i < max; i++) {
+        output += list[i];
+        if (i === max - 1) {
+            break
+        }
+        output += ","
+    }
+    console.log("Output: " + output);
 
     return output;
 }
