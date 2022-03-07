@@ -1,7 +1,7 @@
 function download(data, name) {
     let input = gatherDataTest();
 
-    //Reassign data
+    //Reasign data
     if (input != null) {
         data = input;
     }
