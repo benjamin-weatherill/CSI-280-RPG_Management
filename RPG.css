@@ -175,8 +175,42 @@ body{
     color: white;
 }
 
+#attribute_table_button{
+    margin-top: 285px;
+    margin-left: -25px;
+    width: 8%;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#attribute_table_button:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+#attribute_table_button.active{
+    background-color: black;
+}
 
 /* These set the borders for the attribute table and their differnt cells */
+
+.single_line {
+    white-space: nowrap;
+    width:200px;
+    overflow: hidden;
+} 
+.single_line br {
+display:none;
+
+}
+.single_line * {
+display:inline;
+white-space:nowrap;
+}
+
+
+
+
 #attribute{
     border: 5px solid black;
     color: white;
@@ -200,6 +234,10 @@ body{
 #hp_stat{
     border: 5px solid black;
     color: white;
+    max-width: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #attack{
