@@ -156,8 +156,15 @@ body{
 }
 
 
-/* These set the borders for the attribute table and their differnt cells */
-#attribute{
+/* This is the separate attribute table that shows basic attributes/statistics */
+
+#attribute_table{
+    width: 10%;
+    height: 330px;
+    margin-left: 10px;
+    margin-top: -50px;
+    left: 0;
+    position: absolute;
     border: 5px solid black;
     color: white;
 }
@@ -179,7 +186,9 @@ body{
     background-color: black;
 }
 
-
+#inputformXX {
+    visibility: hidden;
+}
 
 /* These set the borders for the attribute table and their differnt cells */
 
