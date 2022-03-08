@@ -2,7 +2,7 @@
 document.getElementById("userInput").onload = function() {userInput}
 
 function userInput(){
-    input = window.prompt("Select your character: Knight, Mage, Cleric, or Theif.");
+    let input = window.prompt("Select your character: Knight, Mage, Cleric, or Theif.");
     if(input == "Knight" || input == "knight"){
         alert("You chose the class Knight!");
     }
