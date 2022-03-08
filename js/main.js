@@ -57,13 +57,10 @@ function createTable(){
 
 	if (y == "knight"){
 		console.log("Knight Table Test");
-		document.getElementById("hp_stat").innerHTML = '0'
-		document.getElementById("attack_stat").innerHTML = "0"
-		document.getElementById("defense_stat").innerHTML = "0"
-		document.getElementById("strength_stat").innerHTML = "0"
-		document.getElementById("magic_stat").innerHTML = "0"
 
 		document.getElementById("character_name").innerHTML = "Aragorn";
+		document.getElementById("character_class").innerHTML = "Knight";
+		document.getElementById("character_class").style.backgroundColor = 'crimson';
 		document.getElementById("attribute_table").style.backgroundColor = 'crimson';
 		document.getElementById('character_name').style.backgroundColor = 'crimson';
 		document.getElementById('weapons').style.backgroundColor = 'crimson';
@@ -72,13 +69,10 @@ function createTable(){
 	}
 	else if (y == "mage"){
 		console.log("Mage Table Test")
-		document.getElementById("hp_stat").innerHTML = '1'
-		document.getElementById("attack_stat").innerHTML = "1"
-		document.getElementById("defense_stat").innerHTML = "1"
-		document.getElementById("strength_stat").innerHTML = "1"
-		document.getElementById("magic_stat").innerHTML = "1"
 
 		document.getElementById("character_name").innerHTML = "Gandalf the Grey";
+		document.getElementById("character_class").innerHTML = "Mage";
+		document.getElementById("character_class").style.backgroundColor = 'deepskyblue';
 		document.getElementById("attribute_table").style.backgroundColor = 'deepskyblue';
 		document.getElementById('character_name').style.backgroundColor = 'deepskyblue';
 		document.getElementById('weapons').style.backgroundColor = 'deepskyblue';
@@ -87,13 +81,10 @@ function createTable(){
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Table Test")
-		document.getElementById("hp_stat").innerHTML = '2'
-		document.getElementById("attack_stat").innerHTML = "2"
-		document.getElementById("defense_stat").innerHTML = "2"
-		document.getElementById("strength_stat").innerHTML = "2"
-		document.getElementById("magic_stat").innerHTML = "2"
 
 		document.getElementById("character_name").innerHTML = "Arwen";
+		document.getElementById("character_class").innerHTML = "Cleric";
+		document.getElementById("character_class").style.backgroundColor = 'mediumseagreen';
 		document.getElementById("attribute_table").style.backgroundColor = 'mediumseagreen';
 		document.getElementById('character_name').style.backgroundColor = 'mediumseagreen';
 		document.getElementById('weapons').style.backgroundColor = 'mediumseagreen';
@@ -102,13 +93,10 @@ function createTable(){
 	}
 	else if (y == "thief"){
 		console.log("Thief Table Test")
-		document.getElementById("hp_stat").innerHTML = '3'
-		document.getElementById("attack_stat").innerHTML = "3"
-		document.getElementById("defense_stat").innerHTML = "3"
-		document.getElementById("strength_stat").innerHTML = "3"
-		document.getElementById("magic_stat").innerHTML = "3"
 
 		document.getElementById("character_name").innerHTML = "Pippen";
+		document.getElementById("character_class").innerHTML = "Thief";
+		document.getElementById("character_class").style.backgroundColor = 'blueviolet';
 		document.getElementById("attribute_table").style.backgroundColor = 'blueviolet';
 		document.getElementById('character_name').style.backgroundColor = 'blueviolet';
 		document.getElementById('weapons').style.backgroundColor = 'blueviolet';
@@ -118,13 +106,10 @@ function createTable(){
 	}
 	else if (y == "archer"){
 		console.log("Archer Table Test")
-		document.getElementById("hp_stat").innerHTML = '4'
-		document.getElementById("attack_stat").innerHTML = "4"
-		document.getElementById("defense_stat").innerHTML = "4"
-		document.getElementById("strength_stat").innerHTML = "4"
-		document.getElementById("magic_stat").innerHTML = "4"
 
 		document.getElementById("character_name").innerHTML = "Legolas";
+		document.getElementById("character_class").innerHTML = "Archer";
+		document.getElementById("character_class").style.backgroundColor = 'midnightblue';
 		document.getElementById("attribute_table").style.backgroundColor = 'midnightblue';
 		document.getElementById('character_name').style.backgroundColor = 'midnightblue';
 		document.getElementById('weapons').style.backgroundColor = 'midnightblue';
@@ -133,13 +118,10 @@ function createTable(){
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Table Test")
-		document.getElementById("hp_stat").innerHTML = '5'
-		document.getElementById("attack_stat").innerHTML = "5"
-		document.getElementById("defense_stat").innerHTML = "5"
-		document.getElementById("strength_stat").innerHTML = "5"
-		document.getElementById("magic_stat").innerHTML = "5"
 
 		document.getElementById("character_name").innerHTML = "Saruman";
+		document.getElementById("character_class").innerHTML = "Dark Mage";
+		document.getElementById("character_class").style.backgroundColor = 'darkorange';
 		document.getElementById("attribute_table").style.backgroundColor = 'darkorange';
 		document.getElementById('character_name').style.backgroundColor = 'darkorange';
 		document.getElementById('weapons').style.backgroundColor = 'darkorange';
@@ -181,3 +163,25 @@ function openCharacter(event, titleName){
 	document.getElementById(titleName).style.display = "block";
 	event.currentTarget.className += "active";
 }
+
+
+function editHP(){
+	document.getElementById("hp_stat").contentEditable = "true";
+}
+
+function editAttack(){
+	document.getElementById("attack_stat").contentEditable = "true";
+}
+
+function editDefense(){
+	document.getElementById("defense_stat").contentEditable = "true";
+}
+
+function editStrength(){
+	document.getElementById("strength_stat").contentEditable = "true";
+}
+
+function editMagic(){
+	document.getElementById("magic_stat").contentEditable = "true";
+}
+
