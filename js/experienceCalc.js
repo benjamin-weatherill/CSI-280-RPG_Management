@@ -44,6 +44,7 @@ function expCalcM (){
     if(enemyDefeated == true){
         console.log("Enemy Defeated!");
         expM = expM + expGive;
+
     }
 }
 
@@ -72,6 +73,7 @@ function expCalcC (){
     if(enemyDefeated == true){
         console.log("Enemy Defeated!");
         expC = expC + expGive;
+
     }
 }
 
@@ -88,3 +90,4 @@ function expCalcT (){
         expT = expT + expGive;
     }
 }
+
