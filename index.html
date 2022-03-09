@@ -52,6 +52,8 @@
 
 		<div id = "character_name">Aragorn</div>
 
+		<div id = "character_class"></div>
+
 		<!-- Links to Tabs -->
 
 		<div class = "tab">
@@ -75,39 +77,37 @@
 		</div>
 
 		<!-- Attribute Table -->
-		<form onsubmit="gatherDataTest(); return false">
-			<table id = "attribute_table">
-				<tr>
-					<th id = "attribute">Attributes</th>
-					<th id = "stats">Statistics</th>
-				</tr>
-					<tr>
-						<th id = "hp">HP</th>
-						<th type="submit" id = "hp_stat" class = "single_line" contenteditable="true">0</th>
-						<!-- <input id="inputformXX" type="submit"/> -->
-					</tr>
-					<tr>
-						<th id = "attack">Attack</th>
-						<th id = "attack_stat" class = "single_line" contenteditable="true">0</th>
-					</tr>
-					<tr>
-						<th id = "defense">Defense</th>
-						<th id = "defense_stat" class = "single_line" contenteditable="true">0</th>
-					</tr>
-					<tr>
-						<th id = "strength">Strength</th>
-						<th id = "strength_stat" class = "single_line" contenteditable="true">0</th>
-					</tr>
-					<tr>
-						<th id = "magic">Magic</th>
-						<th id = "magic_stat" class = "single_line" contenteditable="true">0</th>
-					</tr>
 
+		<table id = "attribute_table">
+			<tr>
+				<th id = "attribute">Attributes</th>
+				<th id = "stats">Statistics</th>
+			</tr>
+			<tr>
+				<td id = "hp"><input class = 'button_class' type = 'button' value = 'HP' onclick = "editHP()"/></td>
+				<td id = "hp_stat" class = "single_line" contenteditable="false">0</td>
+			</tr>
+			<tr>
+				<td id = "attack"><input class = 'button_class' type = 'button' value = 'Attack' onclick = "editAttack()"/></td>
+				<td id = "attack_stat" class = "single_line" contenteditable="false">0</td>
+			</tr>
+			<tr>
+				<td id = "defense"><input class = 'button_class' type = 'button' value =' Defense' onclick = "editDefense()"/></td>
+				<td id = "defense_stat" class = "single_line" contenteditable="false">0</td>
+			</tr>
+			<tr>
+				<td id = "strength"><input class = 'button_class' type = 'button' value = 'Strength' onclick = "editStrength()"/></td>
+				<td id = "strength_stat" class = "single_line" contenteditable="false">0</td>
+			</tr>
+			<tr>
+				<td id = "magic"><input class = 'button_class' type='button' value='Magic' onclick = "editMagic()"/></td>
+				<td id = "magic_stat" class = "single_line" contenteditable="false">0</td>
+			</tr>
 			</table>
 
-			<button id="attribute_table_button" onclick="gatherDataTest(); return false">Submit</button>
-		</form>
-	</div>
+			<!---<button id = "attribute_table_button">Submit</button>--->
+
+		</div>
 
 		<div id="fill_image" style = background:transparent;></div>
 
