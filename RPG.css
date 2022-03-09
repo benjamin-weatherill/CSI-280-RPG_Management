@@ -107,8 +107,8 @@ background-color: #ccc;
 
 #dark_mode_button{
     height: 20px;
-    width: 75px;
-    margin-left: 245px;
+    width: 80px;
+    margin-left: 242px;
     margin-top: 70px;
     color: whitesmoke;
     background-color: rgba(0,0,0, 0.5);
@@ -142,7 +142,7 @@ background-color: #ccc;
 /* Character Container For the Character Customization Area */
 #character_container{
     width: 55%;
-    height: 400px;
+    height: 405px;
     border: 15px solid black;
     padding: 50px;
     margin: 20px;
