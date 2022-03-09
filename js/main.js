@@ -185,3 +185,6 @@ function editMagic(){
 	document.getElementById("magic_stat").contentEditable = "true";
 }
 
+
+function dark_mode(){
+	document.body.style.backgroundImage = "url('https://static.wikia.nocookie.net/criticalrole/images/1/16/The_Cyrengreen_Forest_-_Robin_Wyatt.jpg/revision/latest/scale-to-width-down/2000?cb=20211221125350')";}

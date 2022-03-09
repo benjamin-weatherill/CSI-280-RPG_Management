@@ -17,6 +17,10 @@
 	<body style="overflow-x: hidden">
 		<h1 id="Home_Page_Title">RPG Management System</h1>
 
+		<!--Sidebar Container-->
+
+		<div id = "sidebar_container">
+
 		<!--Character Drop Down Menu-->
 
 		<label id="drop_menu">Choose a Character Class</label>
@@ -34,25 +38,32 @@
 		<br/><br/>
 		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
 
-		<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>
-		<br/><br/>
+		<!---<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>--->
 
 		<form id="inputForm">
 			<input id="input" type="file"/>
 			<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
 		</form>
-		
+
+
+		<div id = "dark_mode">
+			<button id = "dark_mode_button" onclick = "dark_mode()">Dark Mode</button>
+		</div>
+
+		<!--
 		<div id="myButtonDiv">
 			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
 			<p id="test"></p>
 		</div>
+		--->
 
+		</div>
 
 		<!-- Character Container -->
 
 	<div id = "character_container">
 
-		<div id = "character_name">Aragorn</div>
+		<div id = "character_name" contenteditable = "false">Aragorn</div>
 
 		<div id = "character_class"></div>
 
@@ -105,7 +116,7 @@
 				<td id = "magic"><input class = 'button_class' type='button' value='Magic' onclick = "editMagic()"/></td>
 				<td id = "magic_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
-			</table>
+		</table>
 
 			<!---<button id = "attribute_table_button">Submit</button>--->
 
