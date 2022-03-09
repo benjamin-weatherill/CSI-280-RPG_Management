@@ -20,26 +20,43 @@ function revertDownload() {
 }
 
 function gatherDataTest() {
+    let list = [];
     let a = "HP:" + document.getElementById("hp_stat").innerText;
-    console.log("HP is: " + a);
+    list.push(a);
     let b = "ATTACK:" + document.getElementById("attack_stat").innerText;
-    console.log("Attack is: " + b);
+    list.push(b);
     let c = "DEFENSE:" + document.getElementById("defense_stat").innerText;
-    console.log("Defense is: " + c);
+    list.push(c);
     let d = "STRENGTH:" + document.getElementById("strength_stat").innerText;
-    console.log("Strength is: " + d);
+    list.push(d);
     let e = "MAGIC:" + document.getElementById("magic_stat").innerText;
-    console.log("Magic is: " + e);
+    list.push(e);
+    let f = "CLASS:" + document.getElementById("character_class").innerText;
+    list.push(f);
 
     //Name
     let name = "NAME:" + document.getElementById("character_name").innerText;
-    console.log("Name: " + name);
+    list.push(name);
 
-    let list = [a, b, c, d, e, name];
+    /*
+
+    //Weapons
+    let weapon_a = "WEAPON_A:" + document.getElementById("weapon").innerText;
+    list.push(weapon_a);
+
+    //Skills
+    let skill_a = "SKILL_A:" + document.getElementById("skill").innerText;
+    list.push(skill_a);
+
+    //Items
+    let item_a = "ITEM_A:" + document.getElementById("item").innerText;
+    list.push(item_a);
+
+    */
 
     // Format Output
     let output = "";
-    let max = 6;
+    let max = list.length;
     for (let i = 0; i < max; i++) {
         output += list[i];
         if (i === max - 1) {

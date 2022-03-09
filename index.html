@@ -18,6 +18,8 @@
 	<body style="overflow-x: hidden">
 		<h1 id="Home_Page_Title">RPG Management System</h1>
 
+		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
+
 		<!--Character Drop Down Menu-->
 
 		<label id="drop_menu">Choose a Character Class</label>
@@ -31,9 +33,9 @@
 			<option value="darkmage">Dark Mage</option>
 		</select>
 		
-		<button type="button" id="button1" onclick="success(); characterMenu(); createTable(); gatherDataTest();">Enter</button>
+		<button type="button" id="button1" onclick="success(); characterMenu(); createTable();">Enter</button>
 		<br/><br/>
-		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
+
 
 		<br/><br/>
 
@@ -57,9 +59,9 @@
 		<!-- Links to Tabs -->
 
 		<div class = "tab">
-			<button class = "tab_link" onclick = "openCharacter(event, 'weapons')">Weapons</button>
-			<button class = "tab_link" onclick = "openCharacter(event, 'skills')">Skills</button>
-			<button class = "tab_link" onclick = "openCharacter(event, 'items')">Items</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'weapons');">Weapons</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'skills');">Skills</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'items');">Items</button>
 		</div>
 
 		<!--Content of Tabs -->
@@ -84,23 +86,23 @@
 				<th id = "stats">Statistics</th>
 			</tr>
 			<tr>
-				<td id = "hp"><input class = 'button_class' type = 'button' value = 'HP' onclick = "editHP()"/></td>
+				<td id = "hp"><input class = 'button_class' type = 'button' value = 'HP' onclick = "editHP();"/></td>
 				<td id = "hp_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
 			<tr>
-				<td id = "attack"><input class = 'button_class' type = 'button' value = 'Attack' onclick = "editAttack()"/></td>
+				<td id = "attack"><input class = 'button_class' type = 'button' value = 'Attack' onclick = "editAttack();"/></td>
 				<td id = "attack_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
 			<tr>
-				<td id = "defense"><input class = 'button_class' type = 'button' value =' Defense' onclick = "editDefense()"/></td>
+				<td id = "defense"><input class = 'button_class' type = 'button' value =' Defense' onclick = "editDefense();"/></td>
 				<td id = "defense_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
 			<tr>
-				<td id = "strength"><input class = 'button_class' type = 'button' value = 'Strength' onclick = "editStrength()"/></td>
+				<td id = "strength"><input class = 'button_class' type = 'button' value = 'Strength' onclick = "editStrength();"/></td>
 				<td id = "strength_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
 			<tr>
-				<td id = "magic"><input class = 'button_class' type='button' value='Magic' onclick = "editMagic()"/></td>
+				<td id = "magic"><input class = 'button_class' type='button' value='Magic' onclick = "editMagic();"/></td>
 				<td id = "magic_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
 			</table>
