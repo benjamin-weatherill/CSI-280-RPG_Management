@@ -54,6 +54,14 @@ function gatherDataTest() {
 
     */
 
+    /*
+    * Split test for file input reading/parsing
+    let word = a.split(":");
+    if (word[0] === "HP") {
+        console.log(word[1]);
+    }
+    */
+
     // Format Output
     let output = "";
     let max = list.length;
