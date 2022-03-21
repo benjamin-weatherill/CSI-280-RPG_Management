@@ -20,18 +20,59 @@ function revertDownload() {
 }
 
 function gatherDataTest() {
-    let a = document.getElementById("hp_stat").innerText;
-    console.log("HP is: " + a);
-    let b = document.getElementById("attack_stat").innerText;
-    console.log("Attack is: " + b);
-    let c = document.getElementById("defense_stat").innerText;
-    console.log("Defense is: " + c);
-    let d = document.getElementById("strength_stat").innerText;
-    console.log("Strength is: " + d);
-    let e = document.getElementById("magic_stat").innerText;
-    console.log("Magic is: " + e);
+    let list = [];
+    let a = "HP:" + document.getElementById("hp_stat").innerText;
+    list.push(a);
+    let b = "ATTACK:" + document.getElementById("attack_stat").innerText;
+    list.push(b);
+    let c = "DEFENSE:" + document.getElementById("defense_stat").innerText;
+    list.push(c);
+    let d = "STRENGTH:" + document.getElementById("strength_stat").innerText;
+    list.push(d);
+    let e = "MAGIC:" + document.getElementById("magic_stat").innerText;
+    list.push(e);
+    let f = "CLASS:" + document.getElementById("character_class").innerText;
+    list.push(f);
+
+    //Name
+    let name = "NAME:" + document.getElementById("character_name").innerText;
+    list.push(name);
+
+    /*
+
+    //Weapons
+    let weapon_a = "WEAPON_A:" + document.getElementById("weapon").innerText;
+    list.push(weapon_a);
+
+    //Skills
+    let skill_a = "SKILL_A:" + document.getElementById("skill").innerText;
+    list.push(skill_a);
+
+    //Items
+    let item_a = "ITEM_A:" + document.getElementById("item").innerText;
+    list.push(item_a);
+
+    */
+
+    /*
+    * Split test for file input reading/parsing
+    let word = a.split(":");
+    if (word[0] === "HP") {
+        console.log(word[1]);
+    }
+    */
+
     // Format Output
-    let output = "HP:" + a + ",ATTACK:" + b + ",DEFENSE:" + c + ",STRENGTH:" + d + ",MAGIC:" + e;
+    let output = "";
+    let max = list.length;
+    for (let i = 0; i < max; i++) {
+        output += list[i];
+        if (i === max - 1) {
+            break
+        }
+        output += ","
+    }
+    console.log("Output: " + output);
 
     return output;
 }
