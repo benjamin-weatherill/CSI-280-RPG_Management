@@ -24,45 +24,48 @@
 
 		<div id = "sidebar_container">
 
-		<!--Character Drop Down Menu-->
+			<!--Character Drop Down Menu-->
 
-		<label id="drop_menu">Choose a Character Class</label>
+			<label id="drop_menu">Choose a Character Class</label>
 
-		<select id="drop_menu_2">
-			<option value="knight">Knight</option>
-			<option value="mage">Mage</option>
-			<option value="cleric">Cleric</option>
-			<option value="thief">Thief</option>
-			<option value="archer">Archer</option>
-			<option value="darkmage">Dark Mage</option>
-		</select>
-		
-		<button type="button" id="button1" onclick="success(); characterMenu(); createTable();">Enter</button>
-		<br/><br/>
+			<select id="drop_menu_2">
+				<option value="knight">Knight</option>
+				<option value="mage">Mage</option>
+				<option value="cleric">Cleric</option>
+				<option value="thief">Thief</option>
+				<option value="archer">Archer</option>
+				<option value="darkmage">Dark Mage</option>
+			</select>
 
-		<!---<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>--->
+			<button type="button" id="button1" onclick="success(); characterMenu(); createTable();">Enter</button>
+			<br/><br/>
 
-		<form id="inputForm">
-			<input id="input" type="file"/>
-			<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
-		</form>
+			<!---<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>--->
 
+			<form id="inputForm">
+				<input id="input" type="file"/>
+				<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
+			</form>
 
-		<div id = "dark_mode">
-			<button id = "dark_mode_button" value = "Dark Mode" onclick = "dark_mode()">Dark Mode</button>
+			<div id = "save">
+				<!-- Save Button -->
+				<button class="save" id="saveButton" type="button" onclick="download('test', 'playerSave.txt.');">Save Player</button>
+				<a href="" class="save" id="a" onclick="revertDownload();">Download</a>
+			</div>
+
+			<div id = "dark_mode">
+				<button id = "dark_mode_button" value = "Dark Mode" onclick = "dark_mode()">Dark Mode</button>
+			</div>
+
+			<!--
+			<div id="myButtonDiv">
+				<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
+				<p id="test"></p>
+			</div>
+			--->
+
 		</div>
 
-		<!--
-		<div id="myButtonDiv">
-			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
-			<p id="test"></p>
-		</div>
-		--->
-
-		</div>
-		<!-- Save Button -->
-		<button class="save" id="saveButton" type="button" onclick="download('test', 'playerSave.txt.');">Save Player</button>
-		<a href="" class="save" id="a" onclick="revertDownload();">Download</a>
 
 		<!-- Character Container -->
 
