@@ -192,7 +192,54 @@ function openCharacter(event, titleName){
 	event.currentTarget.className += "active";
 }
 
-
+function editField(field) {
+	let f = document.getElementById(field);
+	switch(field) {
+		case "hp_stat":
+			if (f.contentEditable === "true") {
+				f.contentEditable = "false";
+			}
+			else {
+				f.contentEditable = "true";
+			}
+			break;
+		case "attack_stat":
+			if (f.contentEditable === "true") {
+				f.contentEditable = "false";
+			}
+			else {
+				f.contentEditable = "true";
+			}
+			break;
+		case "defense_stat":
+			if (f.contentEditable === "true") {
+				f.contentEditable = "false";
+			}
+			else {
+				f.contentEditable = "true";
+			}
+			break;
+		case "strength_stat":
+			if (f.contentEditable === "true") {
+				f.contentEditable = "false";
+			}
+			else {
+				f.contentEditable = "true";
+			}
+			break;
+		case "magic_stat":
+			if (f.contentEditable === "true") {
+				f.contentEditable = "false";
+			}
+			else {
+				f.contentEditable = "true";
+			}
+			break;
+		default:
+			console.log(field + " is not a field");
+	}
+}
+/*
 function editHP(){
 	document.getElementById("hp_stat").contentEditable = "true";
 }
@@ -212,4 +259,4 @@ function editStrength(){
 function editMagic(){
 	document.getElementById("magic_stat").contentEditable = "true";
 }
-
+*/
