@@ -108,6 +108,7 @@ background-color: #ccc;
 #dark_mode_button{
     height: 20px;
     width: 80px;
+    font-size: 10px;
     margin-left: 242px;
     margin-top: 70px;
     color: whitesmoke;
