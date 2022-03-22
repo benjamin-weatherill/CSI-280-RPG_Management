@@ -485,10 +485,20 @@ footer {
         font-weight: bolder;
     }
 
-    .saveButton
+    #saveButton
     {
         visibility: visible;
-        margin-left: 600px;
+        background-color:rgba(0,0,0, 0.5);
+        color: whitesmoke;
+    }
+
+    #saveButton:hover {
+        background-color:whitesmoke;
+        color: black;
+    }
+    
+    #saveButton.active {
+        background-color:rgba(0,0,0, 0.5);
     }
 
 
