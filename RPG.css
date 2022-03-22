@@ -1,21 +1,25 @@
-body{
+body
+{
     background-image: url("https://cdn.gamedevmarket.net/wp-content/uploads/20191203193538/8b741662764b0e71bf113859b6fe2ee84ee6d14f.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
     margin-bottom: 0;
 }
 
-#Home_Page_Title{
-    color:white;
+#Home_Page_Title
+{
+    color: white;
     font-size: 35px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(0,0,0, 0.5);
-    text-align:center;
+    text-align: center;
     padding: 35px;
 }
 
-#drop_menu{
+#drop_menu
+{
     color: white;
     padding: 10px;
     margin-left: -45px;
@@ -55,11 +59,14 @@ body{
     float: right;
     visibility: hidden;
     background-color: black;
-    margin-right: -1300px;
+    margin-right: 100px;
+    /* margin-right: -1300px; */
+    position: relative;
+    z-index: 1;
 }
 
 #input{
-    height: -30px;
+    height: 30px; /* was -30 */
     width: 175px;
     margin-left: 10px;
     color: whitesmoke;
@@ -91,11 +98,8 @@ body{
 background-color: #ccc;
 }
 
-#myButtonDiv{
-    visibility: hidden;
-}
-
-#test{
+#test
+{
     height: 50px;
     width: 450px;
     color: white;
@@ -110,7 +114,7 @@ background-color: #ccc;
     width: 80px;
     font-size: 10px;
     margin-left: 242px;
-    margin-top: 70px;
+    margin-top: 45px;
     color: whitesmoke;
     background-color: rgba(0,0,0, 0.5);
 }
@@ -141,7 +145,8 @@ background-color: #ccc;
 
 
 /* Character Container For the Character Customization Area */
-#character_container{
+#character_container
+{
     width: 55%;
     height: 405px;
     border: 15px solid black;
@@ -151,35 +156,39 @@ background-color: #ccc;
     margin-top: 10px;
     position: relative;
     background-color: rgba(0,0,0, 0.5);
+    /* rgb(140, 130, 115) */
 }
 
-#character_name{
+#character_name
+{
     width: 105%;
     height: 65px;
     border: 7px solid black;
     margin-top: -35px;
     margin-left: -30px;
     font-size: 55px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
 }
 
-#character_class{
-    width: 300px;
+#character_class
+{
+    width: 30%;
     height: 15%;
     border: 7px solid black;
     margin-left: 585px;
     margin-top: 10px;
     color: white;
     font-size: 50px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
 }
 
 /* These are the tabs that are used to create the weapons, skills, and items */
-.tab{
+.tab
+{
     overflow: hidden;
     border: 1px solid #ccc;
     margin-top: -75px;
@@ -189,7 +198,8 @@ background-color: #ccc;
     font-size: 50px;
 }
 
-.tab button {
+.tab button
+{
     background-color: inherit;
     float: left;
     border: none;
@@ -199,29 +209,33 @@ background-color: #ccc;
     transition: 0.3s;
     font-size: 30px;
     color: white;
-    background-color:rgba(0,0,0, 0.5);
-  }
+    background-color: rgba(0,0,0, 0.5);
+}
 
-  .tab button:hover {
-    background-color:whitesmoke;
+.tab button:hover
+{
+    background-color: whitesmoke;
     color: black;
-  }
+}
 
-  .tab button.active {
+.tab button.active
+{
     background-color: #ccc;
-  }
+}
 
-
-  .tab_content {
+.tab_content
+{
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-  }
+}
 
 /* This is where the different content is filled for the various tabs */
-#weapons{
-    width: 500px;;
+#weapons
+{
+    width: 500px;
+;
     height: 280px;
     margin-left: 200px;
     margin-top: 5px;
@@ -231,9 +245,10 @@ background-color: #ccc;
     color: white;
 }
 
-
-#skills{
-    width: 500px;;
+#skills
+{
+    width: 500px;
+;
     height: 280px;
     margin-left: 200px;
     margin-top: 5px;
@@ -243,9 +258,10 @@ background-color: #ccc;
     color: white;
 }
 
-
-#items{
-    width: 500px;;
+#items
+{
+    width: 500px;
+;
     height: 280px;
     margin-left: 200px;
     margin-top: 5px;
@@ -258,7 +274,8 @@ background-color: #ccc;
 
 /* This is the separate attribute table that shows basic attributes/statistics */
 
-#attribute_table{
+#attribute_table
+{
     width: 10%;
     height: 330px;
     margin-left: 10px;
@@ -269,7 +286,8 @@ background-color: #ccc;
     color: white;
 }
 
-#attribute_table_button{
+#attribute_table_button
+{
     margin-top: 285px;
     margin-left: -25px;
     width: 8%;
@@ -277,70 +295,84 @@ background-color: #ccc;
     color: black;
 }
 
-#attribute_table_button:hover{
+#attribute_table_button:hover
+{
     background-color: black;
     color: whitesmoke;
 }
 
-#attribute_table_button.active{
+#attribute_table_button.active
+{
     background-color: black;
+}
+
+#inputformXX
+{
+    visibility: hidden;
 }
 
 /* These set the borders for the attribute table and their differnt cells */
 
-.single_line {
+.single_line
+{
     white-space: nowrap;
-    width:200px;
+    width: 200px;
     overflow: hidden;
     text-align: center;
-} 
-.single_line br {
-    display:none;
 }
 
-.single_line * {
-    display:inline;
-    white-space:nowrap;
+.single_line br
+{
+    display: none;
 }
 
+.single_line *
+{
+    display: inline;
+    white-space: nowrap;
+}
 
-.button_class{
-    background-color:rgba(0,0,0, 0.5);
+.button_class
+{
+    background-color: rgba(0,0,0, 0.5);
     color: whitesmoke;
     width: 100%;
     height: 100%;
 }
 
-
-.button_class:hover{
+.button_class:hover
+{
     background-color: whitesmoke;
     color: black;
 }
 
-.button_class.active{
+.button_class.active
+{
     background-color: whitesmoke;
 }
 
-
-
-#attribute{
+#attribute
+{
     border: 5px solid black;
     color: white;
 }
 
-#stats{
+#stats
+{
     border: 5px solid black;
     color: white;
 }
 
 
-#hp{
+#hp
+{
     border: 5px solid black;
     color: white;
     text-align: center;
 }
 
-#hp_stat{
+#hp_stat
+{
     border: 5px solid black;
     color: white;
     max-width: 40px;
@@ -349,13 +381,15 @@ background-color: #ccc;
     white-space: nowrap;
 }
 
-#attack{
+#attack
+{
     border: 5px solid black;
     color: white;
     text-align: center;
 }
 
-#attack_stat{
+#attack_stat
+{
     border: 5px solid black;
     color: white;
     max-width: 40px;
@@ -364,13 +398,15 @@ background-color: #ccc;
     white-space: nowrap;
 }
 
-#defense{
+#defense
+{
     border: 5px solid black;
     color: white;
     text-align: center;
 }
 
-#defense_stat{
+#defense_stat
+{
     border: 5px solid black;
     color: white;
     max-width: 40px;
@@ -379,13 +415,15 @@ background-color: #ccc;
     white-space: nowrap;
 }
 
-#strength{
+#strength
+{
     border: 5px solid black;
     color: white;
     text-align: center;
 }
 
-#strength_stat{
+#strength_stat
+{
     border: 5px solid black;
     color: white;
     max-width: 40px;
@@ -394,13 +432,15 @@ background-color: #ccc;
     white-space: nowrap;
 }
 
-#magic{
+#magic
+{
     border: 5px solid black;
     color: white;
     text-align: center;
 }
 
-#magic_stat{
+#magic_stat
+{
     border: 5px solid black;
     color: white;
     max-width: 40px;
@@ -427,6 +467,23 @@ footer {
     background-color: black;
     opacity: 0.5;
     color: white;
+}
+
+save
+{
+    margin-left: 600px;
+}
+/*
+Save
+ */
+a
+{
+    visibility: hidden;
+}
+
+saveButton
+{
+    visibility: visible;
 }
 
 
