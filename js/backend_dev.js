@@ -73,5 +73,6 @@ function gatherDataTest() {
         output += ","
     }
     console.log("Output: " + output);
+
     return output;
 }

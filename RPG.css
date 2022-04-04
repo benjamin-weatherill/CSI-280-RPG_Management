@@ -4,6 +4,7 @@ body
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: block;
     height: 100%;
     margin-bottom: 0;
 }
@@ -112,8 +113,9 @@ background-color: #ccc;
 #dark_mode_button{
     height: 20px;
     width: 80px;
+    font-size: 10px;
     margin-left: 242px;
-    margin-top: 70px;
+    margin-top: 65px;
     color: whitesmoke;
     background-color: rgba(0,0,0, 0.5);
 }
@@ -155,6 +157,7 @@ background-color: #ccc;
     margin-top: 10px;
     position: relative;
     background-color: rgba(0,0,0, 0.5);
+    /* rgb(140, 130, 115) */
 }
 
 #character_name
@@ -172,7 +175,7 @@ background-color: #ccc;
 
 #character_class
 {
-    width: 300px;
+    width: 30%;
     height: 15%;
     border: 7px solid black;
     margin-left: 585px;
@@ -466,18 +469,38 @@ footer {
     opacity: 0.5;
     color: white;
 }
+
+   
+#save{
+    margin-left: 255px;
+    margin-top: -50px;
+}
 /*
 Save
- */
-a
+*/
+#a
 {
     visibility: hidden;
+    color: black;
+    font-weight: bolder;
 }
 
-saveButton
+#saveButton
 {
     visibility: visible;
+    background-color:rgba(0,0,0, 0.5);
+    color: whitesmoke;
 }
+
+#saveButton:hover {
+    background-color:whitesmoke;
+    color: black;
+}
+
+#saveButton.active {
+    background-color:rgba(0,0,0, 0.5);
+}
+
 
 
 /*
