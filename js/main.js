@@ -272,8 +272,8 @@ let x = document.getElementById('dark_mode_button').innerHTML;
 	}
 
 	if (x == "Dark Mode"){
-		document.body.style.backgroundImage = "url('https://static.wikia.nocookie.net/criticalrole/images/1/16/The_Cyrengreen_Forest_-_Robin_Wyatt.jpg/revision/latest/scale-to-width-down/2000?cb=20211221125350')";
-		//document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapermaiden.com%2Fimage%2F2019%2F07%2F12%2Frabbits-stream-autumn-forest-digital-art-nature-34685.jpeg&f=1&nofb=1')";
+		// document.body.style.backgroundImage = "url('https://static.wikia.nocookie.net/criticalrole/images/1/16/The_Cyrengreen_Forest_-_Robin_Wyatt.jpg/revision/latest/scale-to-width-down/2000?cb=20211221125350')";
+		document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapermaiden.com%2Fimage%2F2019%2F07%2F12%2Frabbits-stream-autumn-forest-digital-art-nature-34685.jpeg&f=1&nofb=1')";
 		document.getElementById('dark_mode_button').innerHTML = "Light Mode";
 		document.getElementById('a').style.color = "whitesmoke";
 
