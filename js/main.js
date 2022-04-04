@@ -261,6 +261,10 @@ function editMagic(){
 }
 */
 
+function swapPage(){
+	window.location = "simBattle.html";
+}
+
 function dark_mode(){
 
 let x = document.getElementById('dark_mode_button').innerHTML;
