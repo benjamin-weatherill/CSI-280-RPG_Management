@@ -1,9 +1,4 @@
 
-
-
-
-
-
 // Universal Success Function
 function success() {
 
