@@ -30,6 +30,7 @@
 			<label id="drop_menu">Choose a Character Class</label>
 
 			<select id="drop_menu_2">
+				<option></option>
 				<option value="knight">Knight</option>
 				<option value="mage">Mage</option>
 				<option value="cleric">Cleric</option>
@@ -38,7 +39,7 @@
 				<option value="darkmage">Dark Mage</option>
 			</select>
 
-			<button type="button" id="button1" onclick="success(); characterMenu(); createTable();">Enter</button>
+			<button type="button" id="button1" onclick="success(); characterMenu(); createTable(); showItems();">Enter</button>
 			<br/><br/>
 
 
@@ -80,7 +81,7 @@
 		<!-- Links to Tabs -->
 
 		<div class = "tab">
-			<button class = "tab_link" onclick = "openCharacter(event, 'weapons');">Weapons</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'weapons'); showItems();">Weapons</button>
 			<button class = "tab_link" onclick = "openCharacter(event, 'skills');">Skills</button>
 			<button class = "tab_link" onclick = "openCharacter(event, 'items');">Items</button>
 		</div>
@@ -88,18 +89,19 @@
 		<!--Content of Tabs -->
 
 		<div id = "weapons" class = "tab_content">
-		
+			<div id = "weapon_1" class = "weapon_display">
+			</div>
 		</div>
 
-		<div id = "weapons_select" class = "tab_select">
-			<div class="grid_item">1</div>
-			<div class="grid_item">2</div>
-			<div class="grid_item">3</div>  
-			<div class="grid_item">4</div>
-			<div class="grid_item">5</div>  
-			<div class="grid_item">6</div>
-			<div class="grid_item">7</div>  
-			<div class="grid_item">8</div>
+		<div id = "inventory_select" class = "tab_select">
+			<div id = item_1 class="grid_item">1</div>
+			<div id = item_2 class="grid_item">2</div>
+			<div id = item_3 class="grid_item">3</div>  
+			<div id = item_4 class="grid_item">4</div>
+			<div id = item_5 class="grid_item">5</div>  
+			<div id = item_6 class="grid_item">6</div>
+			<div id = item_7 class="grid_item">7</div>  
+			<div id = item_8 class="grid_item">8</div>
 		</div>
 
 		<div id = "skills" class = "tab_content">

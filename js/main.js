@@ -61,7 +61,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'crimson';
 		document.getElementById('skills').style.backgroundColor = 'crimson';
 		document.getElementById('items').style.backgroundColor = 'crimson';
-		document.getElementById('weapons_select').style.backgroundColor = 'crimson';
+		document.getElementById('inventory_select').style.backgroundColor = 'crimson';
 
 	}
 	else if (y == "mage"){
@@ -75,7 +75,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'deepskyblue';
 		document.getElementById('skills').style.backgroundColor = 'deepskyblue';
 		document.getElementById('items').style.backgroundColor = 'deepskyblue';
-		document.getElementById('weapons_select').style.backgroundColor = 'deepskyblue';
+		document.getElementById('inventory_select').style.backgroundColor = 'deepskyblue';
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Table Test")
@@ -88,7 +88,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'mediumseagreen';
 		document.getElementById('skills').style.backgroundColor = 'mediumseagreen';
 		document.getElementById('items').style.backgroundColor = 'mediumseagreen';
-		document.getElementById('weapons_select').style.backgroundColor = 'mediumseagreen';
+		document.getElementById('inventory_select').style.backgroundColor = 'mediumseagreen';
 	}
 	else if (y == "thief"){
 		console.log("Thief Table Test")
@@ -101,7 +101,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'blueviolet';
 		document.getElementById('skills').style.backgroundColor = 'blueviolet';
 		document.getElementById('items').style.backgroundColor = 'blueviolet';
-		document.getElementById('weapons_select').style.backgroundColor = 'blueviolet';
+		document.getElementById('inventory_select').style.backgroundColor = 'blueviolet';
 	}
 	else if (y == "archer"){
 		console.log("Archer Table Test")
@@ -114,7 +114,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'midnightblue';
 		document.getElementById('skills').style.backgroundColor = 'midnightblue';
 		document.getElementById('items').style.backgroundColor = 'midnightblue';
-		document.getElementById('weapons_select').style.backgroundColor = 'midnightblue';
+		document.getElementById('inventory_select').style.backgroundColor = 'midnightblue';
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Table Test")
@@ -127,7 +127,41 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'darkorange';
 		document.getElementById('skills').style.backgroundColor = 'darkorange';
 		document.getElementById('items').style.backgroundColor = 'darkorange';
-		document.getElementById('weapons_select').style.backgroundColor = 'darkorange';
+		document.getElementById('inventory_select').style.backgroundColor = 'darkorange';
+	}
+
+}
+
+
+
+function showItems(){
+
+	let y = document.getElementById('drop_menu_2').value;
+
+	if (y == "knight"){
+		console.log("Knight Test");
+		document.getElementById("item_1").innerHTML = '<img src = "https://cdnb.artstation.com/p/assets/images/images/018/984/631/large/maxwell-taylor-cartoon-sword.jpg?1561508202" position: "center" height = "150%" width = "100%">'
+		
+	}
+	else if (y == "mage"){
+		console.log("Mage Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://www.clipartmax.com/png/small/232-2327275_magic-medieval-spell-staff-wood-icon-magic-staff-clipart.png" position: "center" height = "150%" width = "100%">'
+	}
+	else if (y == "cleric"){
+		console.log("Cleric Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.pinimg.com/736x/cb/3d/72/cb3d72d0639553caea88c4bde3b6981b.jpg" position: "center" height = "150%" width = "100%">'
+	}
+	else if (y == "thief"){
+		console.log("Thief Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://cdn1.vectorstock.com/i/1000x1000/49/75/cartoon-crossed-swords-isolated-on-white-vector-24774975.jpg" position: "center" height = "150%" width = "100%">'
+	}
+	else if (y == "archer"){
+		console.log("Archer Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://howtodrawforkids.com/wp-content/uploads/2017/06/how-to-draw-a-bow-and-arrow-for-kids-1.jpg" position: "center" height = "150%" width = "100%">'
+	}
+	else if (y == "darkmage"){
+		console.log("Dark Mage Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://www.vhv.rs/dpng/d/39-396598_dark-mage-staff-hd-png-download.png" position: "center" height = "150%" width = "100%">'
 	}
 
 }

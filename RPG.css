@@ -181,7 +181,7 @@ background-color: #ccc;
     margin-left: 585px;
     margin-top: 10px;
     color: white;
-    font-size: 50px;
+    font-size: 49px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
@@ -254,6 +254,33 @@ background-color: #ccc;
     text-align: center;
   }
 
+  /*Displays Inventory for Weapon, Skills, and Items*/
+
+  #inventory_select{
+    width: 200px;
+
+    height: 280px;
+    margin-left: 650px;
+    margin-top: 5px;
+    left: 0;
+    position: absolute;
+    border: 5px solid black;
+    color: white;
+}
+
+.weapon_display{
+    width: 150px;
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 80px;
+    left: 0;
+    position: absolute;
+
+    background-color:rgba(0, 0, 0, 0.5);
+    border:black;
+}
+
+
 
 
 /* This is where the different content is filled for the various tabs */
@@ -289,19 +316,6 @@ background-color: #ccc;
 
     height: 280px;
     margin-left: 200px;
-    margin-top: 5px;
-    left: 0;
-    position: absolute;
-    border: 5px solid black;
-    color: white;
-}
-
-
-#weapons_select{
-    width: 200px;
-
-    height: 280px;
-    margin-left: 650px;
     margin-top: 5px;
     left: 0;
     position: absolute;
@@ -490,7 +504,7 @@ background-color: #ccc;
 
 #fill_image{
     position: fixed;
-    margin-top: -300px;
+    margin-top: -335px;
 }
 
 
