@@ -232,11 +232,35 @@ background-color: #ccc;
     border-top: none;
 }
 
+
+/*Weapons, Skills, and Items Grid*/
+
+.tab_select
+{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 70px 70px 70px 70px;
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.grid_item {
+    background-color:rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+
 /* This is where the different content is filled for the various tabs */
 #weapons
 {
-    width: 500px;
-;
+    width: 400px;
+
     height: 280px;
     margin-left: 200px;
     margin-top: 5px;
@@ -248,8 +272,8 @@ background-color: #ccc;
 
 #skills
 {
-    width: 500px;
-;
+    width: 400px;
+
     height: 280px;
     margin-left: 200px;
     margin-top: 5px;
@@ -261,8 +285,8 @@ background-color: #ccc;
 
 #items
 {
-    width: 500px;
-;
+    width: 400px;
+
     height: 280px;
     margin-left: 200px;
     margin-top: 5px;
@@ -271,6 +295,20 @@ background-color: #ccc;
     border: 5px solid black;
     color: white;
 }
+
+
+#weapons_select{
+    width: 200px;
+
+    height: 280px;
+    margin-left: 650px;
+    margin-top: 5px;
+    left: 0;
+    position: absolute;
+    border: 5px solid black;
+    color: white;
+}
+
 
 
 /* This is the separate attribute table that shows basic attributes/statistics */

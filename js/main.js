@@ -61,6 +61,8 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'crimson';
 		document.getElementById('skills').style.backgroundColor = 'crimson';
 		document.getElementById('items').style.backgroundColor = 'crimson';
+		document.getElementById('weapons_select').style.backgroundColor = 'crimson';
+
 	}
 	else if (y == "mage"){
 		console.log("Mage Table Test")
@@ -73,6 +75,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'deepskyblue';
 		document.getElementById('skills').style.backgroundColor = 'deepskyblue';
 		document.getElementById('items').style.backgroundColor = 'deepskyblue';
+		document.getElementById('weapons_select').style.backgroundColor = 'deepskyblue';
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Table Test")
@@ -85,6 +88,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'mediumseagreen';
 		document.getElementById('skills').style.backgroundColor = 'mediumseagreen';
 		document.getElementById('items').style.backgroundColor = 'mediumseagreen';
+		document.getElementById('weapons_select').style.backgroundColor = 'mediumseagreen';
 	}
 	else if (y == "thief"){
 		console.log("Thief Table Test")
@@ -97,7 +101,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'blueviolet';
 		document.getElementById('skills').style.backgroundColor = 'blueviolet';
 		document.getElementById('items').style.backgroundColor = 'blueviolet';
-		
+		document.getElementById('weapons_select').style.backgroundColor = 'blueviolet';
 	}
 	else if (y == "archer"){
 		console.log("Archer Table Test")
@@ -110,6 +114,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'midnightblue';
 		document.getElementById('skills').style.backgroundColor = 'midnightblue';
 		document.getElementById('items').style.backgroundColor = 'midnightblue';
+		document.getElementById('weapons_select').style.backgroundColor = 'midnightblue';
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Table Test")
@@ -122,6 +127,7 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'darkorange';
 		document.getElementById('skills').style.backgroundColor = 'darkorange';
 		document.getElementById('items').style.backgroundColor = 'darkorange';
+		document.getElementById('weapons_select').style.backgroundColor = 'darkorange';
 	}
 
 }
@@ -147,45 +153,6 @@ function openCharacter(event, titleName){
 	event.currentTarget.className += "active";
 }
 
-/* This function hides and then shows the different tabs for the characeter creation page */
-
-function openCharacter(event, titleName){
-
-	var i, tabcontent, tablinks;
-
-	tabcontent = document.getElementsByClassName("tab_content");
-	for(i = 0; i < tabcontent.length; i++){
-		tabcontent[i].style.display = "none";
-	}
-
-	tablinks = document.getElementsByClassName("tab_link");
-	for(i = 0; i < tablinks.length; i++){
-		tablinks[i].className = tablinks[i].className.replace("active", "");
-	}
-
-	document.getElementById(titleName).style.display = "block";
-	event.currentTarget.className += "active";
-}
-
-/* This function hides and then shows the different tabs for the characeter creation page */
-
-function openCharacter(event, titleName){
-
-	var i, tabcontent, tablinks;
-
-	tabcontent = document.getElementsByClassName("tab_content");
-	for(i = 0; i < tabcontent.length; i++){
-		tabcontent[i].style.display = "none";
-	}
-
-	tablinks = document.getElementsByClassName("tab_link");
-	for(i = 0; i < tablinks.length; i++){
-		tablinks[i].className = tablinks[i].className.replace("active", "");
-	}
-
-	document.getElementById(titleName).style.display = "block";
-	event.currentTarget.className += "active";
-}
 
 function editField(field) {
 	let f = document.getElementById(field);
