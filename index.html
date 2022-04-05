@@ -16,7 +16,7 @@
 
 <!--Start of Body-->
 
-	<body style="overflow-x: hidden">
+	<body id = "prevent" style="overflow-x: hidden">
 		<h1 id="Home_Page_Title">RPG Management System</h1>
 
 		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
@@ -72,7 +72,7 @@
 
 		<!-- Character Container -->
 
-	<div id = "character_container">
+	<div id = "character_container" class = "prevent">
 
 		<div id = "character_name" contenteditable = "false">Aragorn</div>
 
@@ -89,12 +89,13 @@
 		<!--Content of Tabs -->
 
 		<div id = "weapons" class = "tab_content">
-			<div id = "weapon_1" class = "weapon_display">
-			</div>
 		</div>
 
+		<div id = "weapon_show" class = "weapon_display" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+		</div>		
+
 		<div id = "inventory_select" class = "tab_select">
-			<div id = item_1 class="grid_item">1</div>
+			<div id = item_1 ondrop = "drop(event)" ondragover = "allowDrop(event)" class="grid_item">1</div>
 			<div id = item_2 class="grid_item">2</div>
 			<div id = item_3 class="grid_item">3</div>  
 			<div id = item_4 class="grid_item">4</div>
@@ -148,6 +149,7 @@
 		</div>
 
 		<div id="fill_image" style = background:transparent;></div>
+		
 
 
 	</body>

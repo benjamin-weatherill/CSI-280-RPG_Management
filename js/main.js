@@ -140,28 +140,27 @@ function showItems(){
 
 	if (y == "knight"){
 		console.log("Knight Test");
-		document.getElementById("item_1").innerHTML = '<img src = "https://cdnb.artstation.com/p/assets/images/images/018/984/631/large/maxwell-taylor-cartoon-sword.jpg?1561508202" position: "center" height = "150%" width = "100%">'
-		
+		document.getElementById("item_1").innerHTML = '<img src = "https://cdnb.artstation.com/p/assets/images/images/018/984/631/large/maxwell-taylor-cartoon-sword.jpg?1561508202" draggable = "true" position = "absolute" ondragstart = "drag(event)" height = "150%" width = "100%">'
 	}
 	else if (y == "mage"){
 		console.log("Mage Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://www.clipartmax.com/png/small/232-2327275_magic-medieval-spell-staff-wood-icon-magic-staff-clipart.png" position: "center" height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://www.clipartmax.com/png/small/232-2327275_magic-medieval-spell-staff-wood-icon-magic-staff-clipart.png" draggable = "true" ondragstart = "drag(event)" height = "150%" width = "100%">'
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://i.pinimg.com/736x/cb/3d/72/cb3d72d0639553caea88c4bde3b6981b.jpg" position: "center" height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.pinimg.com/736x/cb/3d/72/cb3d72d0639553caea88c4bde3b6981b.jpg" draggable = "true" ondragstart = "drag(event)" position: "center" height = "150%" width = "100%">'
 	}
 	else if (y == "thief"){
 		console.log("Thief Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://cdn1.vectorstock.com/i/1000x1000/49/75/cartoon-crossed-swords-isolated-on-white-vector-24774975.jpg" position: "center" height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://cdn1.vectorstock.com/i/1000x1000/49/75/cartoon-crossed-swords-isolated-on-white-vector-24774975.jpg" draggable = "true" ondragstart = "drag(event)" position: "center" height = "150%" width = "100%">'
 	}
 	else if (y == "archer"){
 		console.log("Archer Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://howtodrawforkids.com/wp-content/uploads/2017/06/how-to-draw-a-bow-and-arrow-for-kids-1.jpg" position: "center" height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://howtodrawforkids.com/wp-content/uploads/2017/06/how-to-draw-a-bow-and-arrow-for-kids-1.jpg" draggable = "true" ondragstart = "drag(event)" position: "center" height = "150%" width = "100%">'
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://www.vhv.rs/dpng/d/39-396598_dark-mage-staff-hd-png-download.png" position: "center" height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://www.vhv.rs/dpng/d/39-396598_dark-mage-staff-hd-png-download.png" draggable = "true" ondragstart = "drag(event)" position: "center" height = "150%" width = "100%">'
 	}
 
 }
@@ -278,5 +277,20 @@ let x = document.getElementById('dark_mode_button').innerHTML;
 		document.getElementById('a').style.color = "whitesmoke";
 
 	}
+
+}
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("Text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
 
 }
