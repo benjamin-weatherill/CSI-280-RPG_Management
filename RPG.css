@@ -471,35 +471,36 @@ footer {
 }
 
    
-    #save{
-        margin-left: 255px;
-        margin-top: -50px;
-    }
-    /*
-    Save
-    */
-    a
-    {
-        visibility: hidden;
-        color: black;
-        font-weight: bolder;
-    }
+#save{
+    margin-left: 255px;
+    margin-top: -50px;
+}
+/*
+Save
+*/
+#a
+{
+    visibility: hidden;
+    color: black;
+    font-weight: bolder;
+}
 
-    #saveButton
-    {
-        visibility: visible;
-        background-color:rgba(0,0,0, 0.5);
-        color: whitesmoke;
-    }
+#saveButton
+{
+    visibility: visible;
+    background-color:rgba(0,0,0, 0.5);
+    color: whitesmoke;
+}
 
-    #saveButton:hover {
-        background-color:whitesmoke;
-        color: black;
-    }
-    
-    #saveButton.active {
-        background-color:rgba(0,0,0, 0.5);
-    }
+#saveButton:hover {
+    background-color:whitesmoke;
+    color: black;
+}
+
+#saveButton.active {
+    background-color:rgba(0,0,0, 0.5);
+}
+
 
 
 /*

@@ -19,7 +19,17 @@ function revertDownload() {
     document.getElementById("saveButton").style.visibility = "visible";
 }
 
+function editFalse() {
+    document.getElementById("hp_stat").contentEditable = "false";
+    document.getElementById("attack_stat").contentEditable = "false";
+    document.getElementById("defense_stat").contentEditable = "false";
+    document.getElementById("strength_stat").contentEditable = "false";
+    document.getElementById("magic_stat").contentEditable = "false";
+
+}
+
 function gatherDataTest() {
+    editFalse(); //Revert all fields to non-editable
     let list = [];
     let a = "HP:" + document.getElementById("hp_stat").innerText;
     list.push(a);
