@@ -72,7 +72,7 @@
 
 		<!-- Character Container -->
 
-	<div id = "character_container" class = "prevent">
+	<div id = "character_container" class = "prevent" ondragenter = "event.preventDefault" ondragover = "event.preventDefault" ondragleave = "event.preventDefault">
 
 		<div id = "character_name" contenteditable = "false">Aragorn</div>
 
@@ -89,12 +89,12 @@
 		<!--Content of Tabs -->
 
 		<div id = "weapons" class = "tab_content">
-			<div id = "weapon_show" class = "weapon_display" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<div id = "weapon_show" class = "droptarget" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
 			</div>
 		</div>
 
 		<div id = "inventory_select" class = "tab_select">
-			<div id = item_1 ondrop = "drop(event)" ondragover = "allowDrop(event)" class="grid_item">1</div>
+			<div id = item_1 class="grid_item" ondrop="drop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)">1</div>
 			<div id = item_2 class="grid_item">2</div>
 			<div id = item_3 class="grid_item">3</div>  
 			<div id = item_4 class="grid_item">4</div>

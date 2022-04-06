@@ -230,6 +230,7 @@ background-color: #ccc;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    
 }
 
 
@@ -268,7 +269,7 @@ background-color: #ccc;
     color: white;
 }
 
-.weapon_display{
+#weapon_show{
     width: 150px;
     height: 120px;
     margin-left: 50px;
@@ -278,6 +279,7 @@ background-color: #ccc;
 
     background-color:rgba(0, 0, 0, 0.5);
     border:black;
+    pointer-events:fill;
 }
 
 
