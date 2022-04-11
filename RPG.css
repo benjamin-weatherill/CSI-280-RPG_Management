@@ -95,7 +95,7 @@ body
     color: black;
 }
 
-#inoutUpload.active {
+#inputUpload.active {
 background-color: #ccc;
 }
 
@@ -181,7 +181,7 @@ background-color: #ccc;
     margin-left: 585px;
     margin-top: 10px;
     color: white;
-    font-size: 50px;
+    font-size: 49px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
@@ -230,13 +230,66 @@ background-color: #ccc;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    
 }
+
+
+/*Weapons, Skills, and Items Grid*/
+
+.tab_select
+{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 70px 70px 70px 70px;
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.grid_item {
+    background-color:rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /*Displays Inventory for Weapon, Skills, and Items*/
+
+  #inventory_select{
+    width: 200px;
+
+    height: 280px;
+    margin-left: 650px;
+    margin-top: 5px;
+    left: 0;
+    position: absolute;
+    border: 5px solid black;
+    color: white;
+}
+
+#weapon_show{
+    width: 150px;
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 80px;
+    left: 0;
+    position: absolute;
+
+    background-color:rgba(0, 0, 0, 0.5);
+    border:black;
+    pointer-events:fill;
+}
+
+
+
 
 /* This is where the different content is filled for the various tabs */
 #weapons
 {
-    width: 500px;
-;
+    width: 400px;
+
     height: 280px;
     margin-left: 200px;
     margin-top: 5px;
@@ -248,8 +301,8 @@ background-color: #ccc;
 
 #skills
 {
-    width: 500px;
-;
+    width: 400px;
+
     height: 280px;
     margin-left: 200px;
     margin-top: 5px;
@@ -261,8 +314,8 @@ background-color: #ccc;
 
 #items
 {
-    width: 500px;
-;
+    width: 400px;
+
     height: 280px;
     margin-left: 200px;
     margin-top: 5px;
@@ -271,6 +324,7 @@ background-color: #ccc;
     border: 5px solid black;
     color: white;
 }
+
 
 
 /* This is the separate attribute table that shows basic attributes/statistics */
@@ -452,7 +506,7 @@ background-color: #ccc;
 
 #fill_image{
     position: fixed;
-    margin-top: -300px;
+    margin-top: -335px;
 }
 
 
@@ -471,35 +525,36 @@ footer {
 }
 
    
-    #save{
-        margin-left: 255px;
-        margin-top: -50px;
-    }
-    /*
-    Save
-    */
-    a
-    {
-        visibility: hidden;
-        color: black;
-        font-weight: bolder;
-    }
+#save{
+    margin-left: 255px;
+    margin-top: -50px;
+}
+/*
+Save
+*/
+#a
+{
+    visibility: hidden;
+    color: black;
+    font-weight: bolder;
+}
 
-    #saveButton
-    {
-        visibility: visible;
-        background-color:rgba(0,0,0, 0.5);
-        color: whitesmoke;
-    }
+#saveButton
+{
+    visibility: visible;
+    background-color:rgba(0,0,0, 0.5);
+    color: whitesmoke;
+}
 
-    #saveButton:hover {
-        background-color:whitesmoke;
-        color: black;
-    }
-    
-    #saveButton.active {
-        background-color:rgba(0,0,0, 0.5);
-    }
+#saveButton:hover {
+    background-color:whitesmoke;
+    color: black;
+}
+
+#saveButton.active {
+    background-color:rgba(0,0,0, 0.5);
+}
+
 
 
 /*

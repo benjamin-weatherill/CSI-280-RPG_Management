@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" lang="english">
+
+<html xmlns="http://www.w3.org/1999/html" lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -15,7 +16,7 @@
 
 <!--Start of Body-->
 
-	<body style="overflow-x: hidden">
+	<body id = "prevent" style="overflow-x: hidden">
 		<h1 id="Home_Page_Title">RPG Management System</h1>
 
 		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
@@ -29,6 +30,7 @@
 			<label id="drop_menu">Choose a Character Class</label>
 
 			<select id="drop_menu_2">
+				<option></option>
 				<option value="knight">Knight</option>
 				<option value="mage">Mage</option>
 				<option value="cleric">Cleric</option>
@@ -37,8 +39,9 @@
 				<option value="darkmage">Dark Mage</option>
 			</select>
 
-			<button type="button" id="button1" onclick="success(); characterMenu(); createTable();">Enter</button>
+			<button type="button" id="button1" onclick="success(); characterMenu(); createTable(); showItems();">Enter</button>
 			<br/><br/>
+
 
 			<!---<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>--->
 
@@ -69,7 +72,7 @@
 
 		<!-- Character Container -->
 
-	<div id = "character_container">
+	<div id = "character_container" class = "prevent" ondragenter = "event.preventDefault" ondragover = "event.preventDefault" ondragleave = "event.preventDefault">
 
 		<div id = "character_name" contenteditable = "false">Aragorn</div>
 
@@ -78,7 +81,7 @@
 		<!-- Links to Tabs -->
 
 		<div class = "tab">
-			<button class = "tab_link" onclick = "openCharacter(event, 'weapons');">Weapons</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'weapons'); showItems();">Weapons</button>
 			<button class = "tab_link" onclick = "openCharacter(event, 'skills');">Skills</button>
 			<button class = "tab_link" onclick = "openCharacter(event, 'items');">Items</button>
 		</div>
@@ -86,7 +89,19 @@
 		<!--Content of Tabs -->
 
 		<div id = "weapons" class = "tab_content">
-		
+			<div id = "weapon_show" class = "droptarget" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+			</div>
+		</div>
+
+		<div id = "inventory_select" class = "tab_select">
+			<div id = item_1 class="grid_item" ondrop="drop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+			<div id = item_2 class="grid_item"></div>
+			<div id = item_3 class="grid_item"></div>  
+			<div id = item_4 class="grid_item"></div>
+			<div id = item_5 class="grid_item"></div>  
+			<div id = item_6 class="grid_item"></div>
+			<div id = item_7 class="grid_item"></div>  
+			<div id = item_8 class="grid_item"></div>
 		</div>
 
 		<div id = "skills" class = "tab_content">
@@ -96,6 +111,8 @@
 		<div id = "items" class = "tab_content">
 		
 		</div>
+
+		
 
 		<!-- Attribute Table -->
 
@@ -131,6 +148,7 @@
 		</div>
 
 		<div id="fill_image" style = background:transparent;></div>
+		
 
 
 	</body>
