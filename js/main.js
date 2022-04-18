@@ -145,11 +145,11 @@ function showItems(){
 
 	if (y == "knight"){
 		console.log("Knight Test");
-		document.getElementById("item_1").innerHTML = '<img src = "https://cdnb.artstation.com/p/assets/images/images/018/984/631/large/maxwell-taylor-cartoon-sword.jpg?1561508202" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/jyMGoSm.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "225%" width = "150%">'
 	}
 	else if (y == "mage"){
 		console.log("Mage Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://www.clipartmax.com/png/small/232-2327275_magic-medieval-spell-staff-wood-icon-magic-staff-clipart.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/T8XxnIr.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "225%" width = "150%">'
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Test")
@@ -157,7 +157,7 @@ function showItems(){
 	}
 	else if (y == "thief"){
 		console.log("Thief Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://cdn1.vectorstock.com/i/1000x1000/49/75/cartoon-crossed-swords-isolated-on-white-vector-24774975.jpg" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/OL8Y3en.pngg" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "225%" width = "150%">'
 	}
 	else if (y == "archer"){
 		console.log("Archer Test")
@@ -165,7 +165,7 @@ function showItems(){
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://www.vhv.rs/dpng/d/39-396598_dark-mage-staff-hd-png-download.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget"= height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/7DtaL8J.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget"= height = "225%" width = "150%">'
 	}
 
 }
