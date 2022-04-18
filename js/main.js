@@ -1,9 +1,4 @@
 
-
-
-
-
-
 // Universal Success Function
 function success() {
 
@@ -66,6 +61,8 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'crimson';
 		document.getElementById('skills').style.backgroundColor = 'crimson';
 		document.getElementById('items').style.backgroundColor = 'crimson';
+		document.getElementById('inventory_select').style.backgroundColor = 'crimson';
+		document.getElementById('weapon_show').innerHTML = "";
 	}
 	else if (y == "mage"){
 		console.log("Mage Table Test")
@@ -78,6 +75,8 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'deepskyblue';
 		document.getElementById('skills').style.backgroundColor = 'deepskyblue';
 		document.getElementById('items').style.backgroundColor = 'deepskyblue';
+		document.getElementById('inventory_select').style.backgroundColor = 'deepskyblue';
+		document.getElementById('weapon_show').innerHTML = "";
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Table Test")
@@ -90,6 +89,8 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'mediumseagreen';
 		document.getElementById('skills').style.backgroundColor = 'mediumseagreen';
 		document.getElementById('items').style.backgroundColor = 'mediumseagreen';
+		document.getElementById('inventory_select').style.backgroundColor = 'mediumseagreen';
+		document.getElementById('weapon_show').innerHTML = "";
 	}
 	else if (y == "thief"){
 		console.log("Thief Table Test")
@@ -102,7 +103,8 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'blueviolet';
 		document.getElementById('skills').style.backgroundColor = 'blueviolet';
 		document.getElementById('items').style.backgroundColor = 'blueviolet';
-		
+		document.getElementById('inventory_select').style.backgroundColor = 'blueviolet';
+		document.getElementById('weapon_show').innerHTML = "";
 	}
 	else if (y == "archer"){
 		console.log("Archer Table Test")
@@ -115,6 +117,8 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'midnightblue';
 		document.getElementById('skills').style.backgroundColor = 'midnightblue';
 		document.getElementById('items').style.backgroundColor = 'midnightblue';
+		document.getElementById('inventory_select').style.backgroundColor = 'midnightblue';
+		document.getElementById('weapon_show').innerHTML = "";
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Table Test")
@@ -127,6 +131,41 @@ function createTable(){
 		document.getElementById('weapons').style.backgroundColor = 'darkorange';
 		document.getElementById('skills').style.backgroundColor = 'darkorange';
 		document.getElementById('items').style.backgroundColor = 'darkorange';
+		document.getElementById('inventory_select').style.backgroundColor = 'darkorange';
+		document.getElementById('weapon_show').innerHTML = "";
+	}
+
+}
+
+
+
+function showItems(){
+
+	let y = document.getElementById('drop_menu_2').value;
+
+	if (y == "knight"){
+		console.log("Knight Test");
+		document.getElementById("item_1").innerHTML = '<img src = "https://cdnb.artstation.com/p/assets/images/images/018/984/631/large/maxwell-taylor-cartoon-sword.jpg?1561508202" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "150%" width = "100%">'
+	}
+	else if (y == "mage"){
+		console.log("Mage Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://www.clipartmax.com/png/small/232-2327275_magic-medieval-spell-staff-wood-icon-magic-staff-clipart.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "150%" width = "100%">'
+	}
+	else if (y == "cleric"){
+		console.log("Cleric Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.pinimg.com/736x/cb/3d/72/cb3d72d0639553caea88c4bde3b6981b.jpg" ondragstart="dragStart(event)" draggable="true" id = "droptarget" position: "center" height = "150%" width = "100%">'
+	}
+	else if (y == "thief"){
+		console.log("Thief Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://cdn1.vectorstock.com/i/1000x1000/49/75/cartoon-crossed-swords-isolated-on-white-vector-24774975.jpg" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "150%" width = "100%">'
+	}
+	else if (y == "archer"){
+		console.log("Archer Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://howtodrawforkids.com/wp-content/uploads/2017/06/how-to-draw-a-bow-and-arrow-for-kids-1.jpg" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "150%" width = "100%">'
+	}
+	else if (y == "darkmage"){
+		console.log("Dark Mage Test")
+		document.getElementById("item_1").innerHTML = '<img src = "https://www.vhv.rs/dpng/d/39-396598_dark-mage-staff-hd-png-download.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget"= height = "150%" width = "100%">'
 	}
 
 }
@@ -150,47 +189,13 @@ function openCharacter(event, titleName){
 
 	document.getElementById(titleName).style.display = "block";
 	event.currentTarget.className += "active";
+
+
+	element.ondragenter = function(event){event.preventDefault()};
+	element.ondragleave = function(event){event.preventDefault()};
+	element.ondragover = function(event){event.preventDefault()};
 }
 
-/* This function hides and then shows the different tabs for the characeter creation page */
-
-function openCharacter(event, titleName){
-
-	var i, tabcontent, tablinks;
-
-	tabcontent = document.getElementsByClassName("tab_content");
-	for(i = 0; i < tabcontent.length; i++){
-		tabcontent[i].style.display = "none";
-	}
-
-	tablinks = document.getElementsByClassName("tab_link");
-	for(i = 0; i < tablinks.length; i++){
-		tablinks[i].className = tablinks[i].className.replace("active", "");
-	}
-
-	document.getElementById(titleName).style.display = "block";
-	event.currentTarget.className += "active";
-}
-
-/* This function hides and then shows the different tabs for the characeter creation page */
-
-function openCharacter(event, titleName){
-
-	var i, tabcontent, tablinks;
-
-	tabcontent = document.getElementsByClassName("tab_content");
-	for(i = 0; i < tabcontent.length; i++){
-		tabcontent[i].style.display = "none";
-	}
-
-	tablinks = document.getElementsByClassName("tab_link");
-	for(i = 0; i < tablinks.length; i++){
-		tablinks[i].className = tablinks[i].className.replace("active", "");
-	}
-
-	document.getElementById(titleName).style.display = "block";
-	event.currentTarget.className += "active";
-}
 
 function editField(field) {
 	let f = document.getElementById(field);
@@ -284,3 +289,30 @@ let x = document.getElementById('dark_mode_button').innerHTML;
 	}
 
 }
+function dragStart(event) {
+	event.dataTransfer.setData("Text", event.target.id);
+  }
+  
+  function dragEnter(event) {
+	if ( event.target.className == "droptarget" ) {
+	  document.getElementById("demo").innerHTML = "Entered the dropzone";
+	  event.target.style.border = "3px dotted red";
+	}
+  }
+  
+  function dragLeave(event) {
+	if ( event.target.className == "droptarget" ) {
+	  document.getElementById("demo").innerHTML = "Left the dropzone";
+	  event.target.style.border = "";
+	}
+  }
+  
+  function allowDrop(event) {
+	event.preventDefault();
+  }
+  
+  function drop(event) {
+	event.preventDefault();
+	var data = event.dataTransfer.getData("Text");
+	event.target.appendChild(document.getElementById(data));
+  }
