@@ -12,9 +12,16 @@ function download(data, name) {
     a.download = name;
     a.style.visibility = "visible";
     document.getElementById("saveButton").style.visibility = "hidden";
+    document.getElementById("cancel").style.visibility = "visible";
 }
 
 function revertDownload() {
+    document.getElementById("a").style.visibility = "hidden";
+    document.getElementById("saveButton").style.visibility = "visible";
+}
+
+function cancelDownload() {
+    document.getElementById("cancel").style.visibility = "hidden";
     document.getElementById("a").style.visibility = "hidden";
     document.getElementById("saveButton").style.visibility = "visible";
 }
@@ -65,12 +72,13 @@ function gatherDataTest() {
     */
 
     /*
-    * Split test for file input reading/parsing
+    * Split test for file input reading/parsing*/
+    //let wordSet = a.split(",");
     let word = a.split(":");
     if (word[0] === "HP") {
         console.log(word[1]);
     }
-    */
+
 
     // Format Output
     let output = "";

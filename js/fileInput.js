@@ -5,3 +5,5 @@ fileInput.onchange = () => {
     console.log(selectedFile);
 }
 */
+
+// Bang this out today. Parse file set inner text of objects using the file.
