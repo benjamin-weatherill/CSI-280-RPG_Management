@@ -55,12 +55,19 @@ function gatherDataTest() {
     let name = "NAME:" + document.getElementById("character_name").innerText;
     list.push(name);
 
-    /*
+
 
     //Weapons
-    let weapon_a = "WEAPON_A:" + document.getElementById("weapon").innerText;
-    list.push(weapon_a);
-
+    //let weapon_a = "WEAPON_A:" + document.getElementById("weapon_show").innerText;
+    let weapon_a = "WEAPON_A:" + document.getElementById("drop_menu_2").value;
+    if (weapon_a != null) {
+        console.log(weapon_a);
+    }
+    else {
+        console.log("Weapon_a is null");
+    }
+    //list.push(weapon_a);
+/*
     //Skills
     let skill_a = "SKILL_A:" + document.getElementById("skill").innerText;
     list.push(skill_a);
@@ -76,7 +83,7 @@ function gatherDataTest() {
     //let wordSet = a.split(",");
     let word = a.split(":");
     if (word[0] === "HP") {
-        console.log(word[1]);
+        console.log("HP is " + word[1]);
     }
 
 

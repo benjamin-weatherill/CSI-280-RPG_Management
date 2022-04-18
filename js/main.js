@@ -294,14 +294,14 @@ function dragStart(event) {
   }
   
   function dragEnter(event) {
-	if ( event.target.className == "droptarget" ) {
+	if ( event.target.className === "droptarget" ) {
 	  document.getElementById("demo").innerHTML = "Entered the dropzone";
 	  event.target.style.border = "3px dotted red";
 	}
   }
   
   function dragLeave(event) {
-	if ( event.target.className == "droptarget" ) {
+	if ( event.target.className === "droptarget" ) {
 	  document.getElementById("demo").innerHTML = "Left the dropzone";
 	  event.target.style.border = "";
 	}
