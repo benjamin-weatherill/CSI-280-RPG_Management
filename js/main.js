@@ -145,19 +145,19 @@ function showItems(){
 
 	if (y == "knight"){
 		console.log("Knight Test");
-		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/jyMGoSm.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "225%" width = "150%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/jyMGoSm.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "175%" width = "100%">'
 	}
 	else if (y == "mage"){
 		console.log("Mage Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/T8XxnIr.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "225%" width = "150%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/T8XxnIr.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "175%" width = "100%">'
 	}
 	else if (y == "cleric"){
 		console.log("Cleric Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://i.pinimg.com/736x/cb/3d/72/cb3d72d0639553caea88c4bde3b6981b.jpg" ondragstart="dragStart(event)" draggable="true" id = "droptarget" position: "center" height = "150%" width = "100%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/aaki5Oo.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget" position: "center" height = "175%" width = "100%">'
 	}
 	else if (y == "thief"){
 		console.log("Thief Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/OL8Y3en.pngg" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "225%" width = "150%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/OL8Y3en.pngg" ondragstart="dragStart(event)" draggable="true" id = "droptarget" height = "175%" width = "100%">'
 	}
 	else if (y == "archer"){
 		console.log("Archer Test")
@@ -165,7 +165,7 @@ function showItems(){
 	}
 	else if (y == "darkmage"){
 		console.log("Dark Mage Test")
-		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/7DtaL8J.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget"= height = "225%" width = "150%">'
+		document.getElementById("item_1").innerHTML = '<img src = "https://i.imgur.com/7DtaL8J.png" ondragstart="dragStart(event)" draggable="true" id = "droptarget"= height = "175%" width = "100%">'
 	}
 
 }
