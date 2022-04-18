@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" lang="english">
 
-<html xmlns="http://www.w3.org/1999/html" lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -46,14 +46,15 @@
 			<!---<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>--->
 
 			<form id="inputForm">
-				<input id="input" type="file"/>
-				<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
+				<input id="input" type="file" disabled/>
+				<button id="inputUpload" type="submit" onclick="upload();console.log('Debug Output: Upload Button')" disabled>Upload</button>
 			</form>
 
 			<div id = "save">
 				<!-- Save Button -->
 				<button class="save" id="saveButton" type="button" onclick="download('test', 'playerSave.txt.');">Save Player</button>
 				<a href="" class="save" id="a" onclick="revertDownload();">Download</a>
+				<button class="save" id="cancel" type="button" onclick="cancelDownload();">Cancel Save</button>
 			</div>
 
 			<div id = "dark_mode">

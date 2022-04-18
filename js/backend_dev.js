@@ -12,9 +12,16 @@ function download(data, name) {
     a.download = name;
     a.style.visibility = "visible";
     document.getElementById("saveButton").style.visibility = "hidden";
+    document.getElementById("cancel").style.visibility = "visible";
 }
 
 function revertDownload() {
+    document.getElementById("a").style.visibility = "hidden";
+    document.getElementById("saveButton").style.visibility = "visible";
+}
+
+function cancelDownload() {
+    document.getElementById("cancel").style.visibility = "hidden";
     document.getElementById("a").style.visibility = "hidden";
     document.getElementById("saveButton").style.visibility = "visible";
 }
@@ -48,12 +55,19 @@ function gatherDataTest() {
     let name = "NAME:" + document.getElementById("character_name").innerText;
     list.push(name);
 
-    /*
+
 
     //Weapons
-    let weapon_a = "WEAPON_A:" + document.getElementById("weapon").innerText;
-    list.push(weapon_a);
-
+    //let weapon_a = "WEAPON_A:" + document.getElementById("weapon_show").innerText;
+    let weapon_a = "WEAPON_A:" + document.getElementById("drop_menu_2").value;
+    if (weapon_a != null) {
+        console.log(weapon_a);
+    }
+    else {
+        console.log("Weapon_a is null");
+    }
+    //list.push(weapon_a);
+/*
     //Skills
     let skill_a = "SKILL_A:" + document.getElementById("skill").innerText;
     list.push(skill_a);
@@ -65,12 +79,13 @@ function gatherDataTest() {
     */
 
     /*
-    * Split test for file input reading/parsing
+    * Split test for file input reading/parsing*/
+    //let wordSet = a.split(",");
     let word = a.split(":");
     if (word[0] === "HP") {
-        console.log(word[1]);
+        console.log("HP is " + word[1]);
     }
-    */
+
 
     // Format Output
     let output = "";

@@ -539,6 +539,13 @@ Save
     font-weight: bolder;
 }
 
+#cancel
+{
+    visibility: hidden;
+    background-color:rgba(0,0,0, 0.5);
+    color: whitesmoke;
+}
+
 #saveButton
 {
     visibility: visible;
