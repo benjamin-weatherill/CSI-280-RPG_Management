@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" lang="english">
+
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 		<title>RPG Management System</title>
 		<link rel="stylesheet" href="RPG.css">
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -10,42 +11,111 @@
 		<script src="js/jquery-3.6.0.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/fileInput.js"></script>
+		<script src="js/backend_dev.js"></script>
 	</head>
 
 <!--Start of Body-->
 
-	<body style="overflow-x: hidden">
+	<body id = "prevent" style="overflow-x: hidden">
 		<h1 id="Home_Page_Title">RPG Management System</h1>
 
-		<!--Character Drop Down Menu-->
-
-		<label id="drop_menu">Choose a Character Class</label>
-
-		<select id="drop_menu_2">
-			<option value="knight">Knight</option>
-			<option value="mage">Mage</option>
-			<option value="cleric">Cleric</option>
-			<option value="thief">Thief</option>
-			<option value="archer">Archer</option>
-			<option value="darkmage">Dark Mage</option>
-		</select>
-		
-		<button type="button" id="button1" onclick="success(); characterMenu(); createTable();">Enter</button>
-		<br/><br/>
 		<img id="success" src="https://cdn.discordapp.com/attachments/937864963433832538/940375695530549278/maxresdefault.jpg" width="270" height="150">
 
-		<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>
-		<br/><br/>
+		<!--Sidebar Container-->
 
-		<form id="inputForm">
-			<input id="input" type="file"/>
-			<button id="inputUpload" type="submit" onclick="console.log('Debug Output: Upload Button')">Upload</button>
-		</form>
-		
-		<div id="myButtonDiv">
-			<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
-			<p id="test"></p>
+		<div id = "sidebar_container">
+
+			<!--Character Drop Down Menu-->
+
+			<label id="drop_menu">Choose a Character Class</label>
+
+			<select id="drop_menu_2">
+				<option></option>
+				<option value="knight">Knight</option>
+				<option value="mage">Mage</option>
+				<option value="cleric">Cleric</option>
+				<option value="thief">Thief</option>
+				<option value="archer">Archer</option>
+				<option value="darkmage">Dark Mage</option>
+			</select>
+
+			<button type="button" id="button1" onclick="success(); characterMenu(); createTable(); showItems();">Enter</button>
+			<br/><br/>
+
+
+			<!---<button id="myButton" clear="right" type="button" onclick="switchHidden()">Show Date Button</button>--->
+
+			<form id="inputForm">
+				<input id="input" type="file" disabled/>
+				<button id="inputUpload" type="submit" onclick="upload();console.log('Debug Output: Upload Button')" disabled>Upload</button>
+			</form>
+
+			<div id = "save">
+				<!-- Save Button -->
+				<button class="save" id="saveButton" type="button" onclick="download('test', 'playerSave.txt.');">Save Player</button>
+				<a href="" class="save" id="a" onclick="revertDownload();">Download</a>
+				<button class="save" id="cancel" type="button" onclick="cancelDownload();">Cancel Save</button>
+			</div>
+
+			<div id = "dark_mode">
+				<button id = "dark_mode_button" value = "Dark Mode" onclick = "dark_mode()">Dark Mode</button>
+			</div>
+
+			<!--
+			<div id="myButtonDiv">
+				<button type="button" onclick="testFunc()">Click me to display Date and Time.</button>
+				<p id="test"></p>
+			</div>
+			--->
+
 		</div>
+
+
+		<!-- Character Container -->
+
+	<div id = "character_container" class = "prevent" ondragenter = "event.preventDefault" ondragover = "event.preventDefault" ondragleave = "event.preventDefault">
+
+		<div id = "character_name" contenteditable = "false">Aragorn</div>
+
+		<div id = "character_class"></div>
+
+		<!-- Links to Tabs -->
+
+		<div class = "tab">
+			<button class = "tab_link" onclick = "openCharacter(event, 'weapons'); showItems();">Weapons</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'skills');">Skills</button>
+			<button class = "tab_link" onclick = "openCharacter(event, 'items');">Items</button>
+		</div>
+
+		<!--Content of Tabs -->
+
+		<div id = "weapons" class = "tab_content">
+			<div id = "weapon_show" class = "droptarget" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+			</div>
+		</div>
+
+		<div id = "inventory_select" class = "tab_select">
+			<div id = item_1 class="grid_item" ondrop="drop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+			<div id = item_2 class="grid_item"></div>
+			<div id = item_3 class="grid_item"></div>  
+			<div id = item_4 class="grid_item"></div>
+			<div id = item_5 class="grid_item"></div>  
+			<div id = item_6 class="grid_item"></div>
+			<div id = item_7 class="grid_item"></div>  
+			<div id = item_8 class="grid_item"></div>
+		</div>
+
+		<div id = "skills" class = "tab_content">
+			
+		</div>
+
+		<div id = "items" class = "tab_content">
+		
+		</div>
+
+		
+
+		<!-- Attribute Table -->
 
 		<table id = "attribute_table">
 			<tr>
@@ -53,40 +123,44 @@
 				<th id = "stats">Statistics</th>
 			</tr>
 			<tr>
-				<th id = "hp">HP</th>
-				<th id = "hp_stat"></th>
+				<td id = "hp"><input class = 'button_class' type = 'button' value = 'HP' onclick = "editField('hp_stat');"/></td>
+				<td id = "hp_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
 			<tr>
-				<th id = "attack">Attack</th>
-				<th id = "attack_stat"></th>
+				<td id = "attack"><input class = 'button_class' type = 'button' value = 'Attack' onclick = "editField('attack_stat');"/></td>
+				<td id = "attack_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
 			<tr>
-				<th id = "defense">Defense</th>
-				<th id = "defense_stat"></th>
+				<td id = "defense"><input class = 'button_class' type = 'button' value =' Defense' onclick = "editField('defense_stat');"/></td>
+				<td id = "defense_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
 			<tr>
-				<th id = "strength">Strength</th>
-				<th id = "strength_stat"></th>
+				<td id = "strength"><input class = 'button_class' type = 'button' value = 'Strength' onclick = "editField('strength_stat');"/></td>
+				<td id = "strength_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
 			<tr>
-				<th id = "magic">Magic</th>
-				<th id = "magic_stat"></th>
+				<td id = "magic"><input class = "button_class" type='button' value='Magic' onclick="editField('magic_stat');" /></td>
+				<td id = "magic_stat" class = "single_line" contenteditable="false">0</td>
 			</tr>
-
 		</table>
 
+			<!---<button id = "attribute_table_button">Submit</button>--->
+
+		</div>
+
 		<div id="fill_image" style = background:transparent;></div>
+		
 
 
 	</body>
 
 <!---End of Body. Start of Footer-->
-
+<!--
 	<footer>
 		<h3>Website Created By:</h3>
-		<p>Ben Weatherill, Andrew Barnett, Andrew Vinci, and Justin Willis</p> <!-- Add your names here-->
+		<p>Ben Weatherill, Andrew Barnett, Andrew Vinci, and Justin Willis</p>
 	</footer>
-
+-->
 </html>
 
 
